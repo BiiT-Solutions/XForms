@@ -1,0 +1,436 @@
+{
+  "class": "com.biit.webforms.persistence.entity.CompleteFormView",
+  "comparationId": "227e1c25-d4f4-4d0c-884b-c06eb56504bf",
+  "creationTime": "May 21, 2018 4:13:47 PM",
+  "updateTime": "May 21, 2018 4:13:47 PM",
+  "name": "form",
+  "label": "LEC Intake leefstijl",
+  "hidden": false,
+  "children": [
+    {
+      "class": "com.biit.webforms.persistence.entity.Category",
+      "comparationId": "e84003e9-d0e4-401c-9d2a-606010276d3b",
+      "creationTime": "Mar 23, 2018 11:02:14 AM",
+      "updateTime": "May 21, 2018 2:01:16 PM",
+      "createdBy": 24903,
+      "updatedBy": 10436,
+      "name": "PersonalDetails",
+      "label": "Persoonlijke gegevens",
+      "hidden": false,
+      "children": [
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "156bbcaf-2720-4cba-a633-d3b31147ae8c",
+          "creationTime": "Mar 23, 2018 11:09:04 AM",
+          "updateTime": "May 21, 2018 11:09:56 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "user_guard",
+          "label": "Als u klant bent kunt u een code invoeren.",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "TEXT",
+          "mandatory": false,
+          "horizontal": false,
+          "description": "In de app gaat u naar setting en drukt u op user code. U krijgt een unieke code die u kunt invoeren. w persoonsgegevens worden dan voor u ingevuld."
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "ad1a67ed-66a2-4af0-95c1-6c3cc5e56de3",
+          "creationTime": "Mar 23, 2018 11:02:25 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "profile_first_name",
+          "label": "Voornaam",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "TEXT",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "1909ac30-7624-4bf0-9124-26b5c88da370",
+          "creationTime": "Mar 23, 2018 11:03:28 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "profile_initials",
+          "label": "Initialen",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "TEXT",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "9a197674-3a62-4338-9b62-428961cf9cc9",
+          "creationTime": "Mar 23, 2018 11:03:44 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "profile_last_name",
+          "label": "Achternaam",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "TEXT",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "0f1057ca-b100-4399-a583-f2ff6a7f58c0",
+          "creationTime": "Mar 23, 2018 11:03:59 AM",
+          "updateTime": "May 21, 2018 2:01:16 PM",
+          "createdBy": 24903,
+          "updatedBy": 10436,
+          "name": "profile_gender",
+          "label": "Geslacht",
+          "hidden": false,
+          "children": [
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "476f0167-63eb-4d74-ae68-77c47fd7b1fd",
+              "creationTime": "Mar 23, 2018 11:04:23 AM",
+              "updateTime": "Mar 23, 2018 11:04:37 AM",
+              "createdBy": 24903,
+              "updatedBy": 24903,
+              "name": "male",
+              "label": "Man",
+              "hidden": false,
+              "children": [],
+              "description": ""
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "edf115d3-16ea-4b7c-8ba9-da0e108d7ea7",
+              "creationTime": "Mar 23, 2018 11:04:37 AM",
+              "updateTime": "Mar 23, 2018 11:04:59 AM",
+              "createdBy": 24903,
+              "updatedBy": 24903,
+              "name": "female",
+              "label": "Vrouw",
+              "hidden": false,
+              "children": [],
+              "description": ""
+            }
+          ],
+          "answerType": "SINGLE_SELECTION_RADIO",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "68968053-8182-48f4-b170-ef93566454ed",
+          "creationTime": "Mar 23, 2018 11:04:59 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "profile_birthday",
+          "label": "Geboortedatum",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "DATE",
+          "answerSubformat": "DATE_PAST",
+          "mandatory": true,
+          "horizontal": false,
+          "description": "Formaat dd-mm-jjjj (bv. 18-04-1980)"
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "c371a73a-96f9-49f4-930f-298c8b4576bd",
+          "creationTime": "Mar 23, 2018 11:05:38 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "person_address_street",
+          "label": "Adres",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "TEXT",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "b940926d-699d-4b30-8c92-1d274a52cc5f",
+          "creationTime": "Mar 23, 2018 11:05:53 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "person_address_postal",
+          "label": "Postcode",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "POSTAL_CODE",
+          "answerSubformat": "POSTAL_CODE",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "541ee539-954c-44f4-8b28-d6aef5cfc32b",
+          "creationTime": "Mar 23, 2018 11:06:33 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "person_address_city",
+          "label": "Woonplaats",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "TEXT",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "fe02e982-32d7-42b6-b0fb-2729a673dfbe",
+          "creationTime": "Mar 23, 2018 11:06:49 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "profile_phone",
+          "label": "telefoonnummer",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "PHONE",
+          "mandatory": true,
+          "horizontal": false,
+          "description": "Om u op een beveiligde manier uw rapport na afloop te kunnen sturen hebben wij uw mobiele nummer nodig\\nFormaat \\u0027alleen cijfers\\u0027 (bv. 0612345678)"
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "c410b002-f34d-4ad7-b95f-6ac718afa007",
+          "creationTime": "Mar 23, 2018 11:07:14 AM",
+          "updateTime": "Mar 23, 2018 11:09:08 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "profile_email_address",
+          "label": "eMail",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "EMAIL",
+          "mandatory": true,
+          "horizontal": false,
+          "description": "Om eventuele aanvullende gegevens te kunnen verzenden, verzoeken we je een email-adres in te vullen"
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.SystemField",
+          "comparationId": "2b65427e-fe31-4e7d-9165-34330b0a252b",
+          "creationTime": "Mar 23, 2018 11:10:59 AM",
+          "updateTime": "Mar 23, 2018 11:11:17 AM",
+          "createdBy": 24903,
+          "updatedBy": 24903,
+          "name": "user_comparation_id",
+          "label": "\u003cuserId\u003e",
+          "hidden": false,
+          "children": [],
+          "fieldName": "userId"
+        }
+      ]
+    }
+  ],
+  "version": 3,
+  "organizationId": 18903,
+  "description": "",
+  "flows": [],
+  "webserviceCalls": [
+    {
+      "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCall",
+      "comparationId": "08c5937b-5695-43fa-9145-5729325be62a",
+      "creationTime": "Apr 5, 2018 10:12:57 AM",
+      "updateTime": "May 21, 2018 4:13:47 PM",
+      "name": "getPatientByCode",
+      "webserviceName": "getPatientByGuardCode",
+      "formElementTrigger_id": [
+        "PersonalDetails",
+        "user_guard"
+      ],
+      "inputLinks": [
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallInputLink",
+          "comparationId": "1a6b7b3f-d2c7-4a5b-8225-f309d541ec8f",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "user_guard",
+          "formElement_id": [
+            "PersonalDetails",
+            "user_guard"
+          ],
+          "errors": [
+            {
+              "errorCode": "not exist",
+              "errorMessage": ""
+            },
+            {
+              "errorCode": "not valid",
+              "errorMessage": ""
+            }
+          ],
+          "validationXpath": "/valid"
+        }
+      ],
+      "outputLinks": [
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "ff6d71b1-ec13-4891-84df-f7652ebc6d29",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "initials",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_initials"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "562450c3-39c9-4f04-a41b-148678861bf2",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "city",
+          "formElement_id": [
+            "PersonalDetails",
+            "person_address_city"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "74a14e34-c0aa-46e1-bf35-bb4daaf74550",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "comparationId",
+          "formElement_id": [
+            "PersonalDetails",
+            "user_comparation_id"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "3e515014-ff40-40c7-a265-c8f278e680a2",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "email",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_email_address"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "f6e78d78-f8cf-4781-bb6a-5d9c158247fa",
+          "creationTime": "May 21, 2018 11:16:21 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "gender",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_gender"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "fbc56f42-8c16-4956-abd7-dc1abafdfd1f",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "postalcode",
+          "formElement_id": [
+            "PersonalDetails",
+            "person_address_postal"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "ea9acc84-18b9-41fe-b0bb-276d16e6cfc8",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "address",
+          "formElement_id": [
+            "PersonalDetails",
+            "person_address_street"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "77376d1b-752b-4a28-b3d0-6559c639c96c",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "birthdate",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_birthday"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "8691af8d-1f49-46e2-9036-562c665d3a27",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "firstname",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_first_name"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "0ffd5d5f-4e9c-478e-b886-3d4f893b1de4",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "lastname",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_last_name"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "da5fe580-45fb-4f5e-879d-001ea782efe1",
+          "creationTime": "Apr 5, 2018 10:12:57 AM",
+          "updateTime": "May 21, 2018 4:13:47 PM",
+          "webservicePort": "mobilePhone",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_phone"
+          ],
+          "isEditable": true
+        }
+      ]
+    }
+  ]
+}

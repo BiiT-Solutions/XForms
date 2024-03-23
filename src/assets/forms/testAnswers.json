@@ -1,0 +1,483 @@
+{
+    "class": "com.biit.form.result.FormResult",
+    "comparationId": "227e1c25-d4f4-4d0c-884b-c06eb56504bf",
+    "creationTime": "Apr 24, 2018 10:17:00 AM",
+    "updateTime": "Apr 24, 2018 10:17:00 AM",
+    "name": "form",
+    "label": "EnergyBalance",
+    "updatedBy": 0,
+    "version": 3,
+    "organizationId": 18903,
+    "children": [
+        {
+            "class": "com.biit.form.result.CategoryResult",
+            "comparationId": "e84003e9-d0e4-401c-9d2a-606010276d3b",
+            "creationTime": "Mar 23, 2018 11:02:14 AM",
+            "updateTime": "Mar 26, 2018 9:43:52 AM",
+            "name": "PersonalDetails",
+            "label": "Persoonlijke gegevens",
+            "children": [
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "156bbcaf-2720-4cba-a633-d3b31147ae8c",
+                    "creationTime": "Mar 23, 2018 11:09:04 AM",
+                    "updateTime": "Mar 26, 2018 9:43:52 AM",
+                    "name": "user_guard",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "tnj4kx"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "ad1a67ed-66a2-4af0-95c1-6c3cc5e56de3",
+                    "creationTime": "Mar 23, 2018 11:02:25 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "profile_first_name",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "borja"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "1909ac30-7624-4bf0-9124-26b5c88da370",
+                    "creationTime": "Mar 23, 2018 11:03:28 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "profile_initials",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "bfs"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "9a197674-3a62-4338-9b62-428961cf9cc9",
+                    "creationTime": "Mar 23, 2018 11:03:44 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "profile_last_name",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "Ferrando"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "0f1057ca-b100-4399-a583-f2ff6a7f58c0",
+                    "creationTime": "Mar 23, 2018 11:03:59 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "profile_gender",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "male"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "68968053-8182-48f4-b170-ef93566454ed",
+                    "creationTime": "Mar 23, 2018 11:04:59 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "profile_birthday",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "1995-02-25"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "c371a73a-96f9-49f4-930f-298c8b4576bd",
+                    "creationTime": "Mar 23, 2018 11:05:38 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "person_address_street",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "adsubia street"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "b940926d-699d-4b30-8c92-1d274a52cc5f",
+                    "creationTime": "Mar 23, 2018 11:05:53 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "person_address_postal",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "03510"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "541ee539-954c-44f4-8b28-d6aef5cfc32b",
+                    "creationTime": "Mar 23, 2018 11:06:33 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "person_address_city",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "Callosa"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "fe02e982-32d7-42b6-b0fb-2729a673dfbe",
+                    "creationTime": "Mar 23, 2018 11:06:49 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "profile_phone",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "+34619155633"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "c410b002-f34d-4ad7-b95f-6ac718afa007",
+                    "creationTime": "Mar 23, 2018 11:07:14 AM",
+                    "updateTime": "Mar 23, 2018 11:09:08 AM",
+                    "name": "profile_email_address",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "oferrando@biit-solutions.com"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "2b65427e-fe31-4e7d-9165-34330b0a252b",
+                    "creationTime": "Mar 23, 2018 11:10:59 AM",
+                    "updateTime": "Mar 23, 2018 11:11:17 AM",
+                    "name": "user_comparation_id",
+                    "label": "<userId>",
+                    "values": [
+                        "0e07c03a-4105-4ffa-89e6-93f48fa67857"
+                    ],
+                    "fieldName": "userId"
+                }
+            ]
+        },
+        {
+            "class": "com.biit.form.result.CategoryResult",
+            "comparationId": "b799d40e-ce87-4a5c-b961-f7ec30bd0055",
+            "creationTime": "Mar 5, 2018 2:05:48 PM",
+            "updateTime": "Apr 14, 2018 1:23:13 PM",
+            "name": "Body",
+            "label": "Fysiek",
+            "children": [
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "bfb2ed24-8607-43b3-9777-6604462bcf65",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:12 PM",
+                    "name": "SleepTime",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "1"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "9d5a10ad-7cb2-495d-a225-58a883cc6a8d",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:12 PM",
+                    "name": "Food",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "2230b6d4-5bd3-4c16-b761-07db3ba65706",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "WorkOut",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "1"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "c8ef9416-ca04-438e-bf2d-0cb25247b348",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "Recharge",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "62a2ef1e-97c4-4c02-a1e7-534c34fd3ebb",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "WorkTime",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "com.biit.form.result.CategoryResult",
+            "comparationId": "9a659b1b-e9c7-44cc-9b65-5af08f8f43ca",
+            "creationTime": "Mar 5, 2018 2:05:48 PM",
+            "updateTime": "Apr 14, 2018 1:23:43 PM",
+            "name": "Emotions",
+            "label": "Emotioneel",
+            "children": [
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "5fe4b0e6-5e14-4909-9bac-16713ea89ea3",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:20 PM",
+                    "name": "EnthusiasticWork",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "92873aaa-743c-4fe3-a2bc-04491b8bf978",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:21 PM",
+                    "name": "FamilyTime",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "bfb0e3d7-5883-4137-abeb-985f33e6cc97",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:22 PM",
+                    "name": "EnjoyTime",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "1"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "85cb43f4-84cd-4c6b-ab0d-3dfdf241f96e",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:34 PM",
+                    "name": "Appreciation",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "7eff8a4f-8229-4976-a0de-499d87876379",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:43 PM",
+                    "name": "CalmAndPositive",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "com.biit.form.result.CategoryResult",
+            "comparationId": "578da108-7aef-460b-8989-cf75926d58b2",
+            "creationTime": "Mar 5, 2018 2:05:48 PM",
+            "updateTime": "Apr 14, 2018 1:23:13 PM",
+            "name": "Mind",
+            "label": "Mentaal",
+            "children": [
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "591d3815-69c9-4399-884e-74c3dbc70964",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "Focus",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "1"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "222f6ab3-4d81-4b1b-89ef-170b419002fa",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "FollowProgram",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "e869f3a3-38e2-48aa-96a9-ff660996b0fe",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "Prioritize",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "c621844c-ca2f-4313-89a8-cc3b964ef1b1",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "QuietMind",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "ca0bea9d-8679-458e-b5ae-30f5112a6123",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "Reflection",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "com.biit.form.result.CategoryResult",
+            "comparationId": "795ba8ea-86f6-43a7-baff-7ead84f62f4b",
+            "creationTime": "Mar 5, 2018 2:05:48 PM",
+            "updateTime": "Apr 14, 2018 1:23:13 PM",
+            "name": "Spirit",
+            "label": "Spiritueel",
+            "children": [
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "a87b3103-482e-47fa-8a4b-add00c8874e4",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "Commitment",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "1"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "6b09f763-61c4-472a-8aec-dcdc715601d2",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "SenseOfPurpose",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "0a7df0b2-342e-4f6d-a672-e0f0e7e14fd8",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "Care",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "3914f995-4f26-4bcb-9b19-40f3c0610e2e",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "ImportanceAttribution",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "6aaabad6-63fe-46b3-97e7-5c4276a75e95",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Apr 14, 2018 1:23:13 PM",
+                    "name": "PositiveDifference",
+                    "label": "",
+                    "children": [],
+                    "values": [
+                        "0"
+                    ]
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "0046ad98-21c5-4c17-9fc7-f44cd2e42973",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Mar 5, 2018 2:05:48 PM",
+                    "name": "organization",
+                    "label": "<<null>>",
+                    "values": [
+                        "Orbis%20Sport"
+                    ],
+                    "fieldName": "<null>"
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "6c242944-2357-4bc3-860d-99c16322a9ce",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Mar 5, 2018 2:05:48 PM",
+                    "name": "appointment",
+                    "label": "<<null>>",
+                    "values": [
+                        null
+                    ],
+                    "fieldName": "<null>"
+                },
+                {
+                    "class": "com.biit.form.result.QuestionWithValueResult",
+                    "comparationId": "174658c7-a8d1-4e96-bc87-a364a7c28ae0",
+                    "creationTime": "Mar 5, 2018 2:05:48 PM",
+                    "updateTime": "Mar 5, 2018 2:05:48 PM",
+                    "name": "appointment_type",
+                    "label": "<<Energy>>",
+                    "values": [
+                        "Energy"
+                    ],
+                    "fieldName": "<Energy>"
+                }
+            ]
+        }
+    ]
+}

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {BiitIconService} from "biit-ui/icon";
+import {completeIconSet} from "biit-icons-collection";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'XForms';
+
+  constructor(biitIconService: BiitIconService) {
+    biitIconService.registerIcons(completeIconSet);
+  }
+
 }

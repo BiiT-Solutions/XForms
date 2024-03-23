@@ -1,0 +1,2486 @@
+{
+  "class": "com.biit.webforms.persistence.entity.CompleteFormView",
+  "comparationId": "986323e4-c38f-4e50-8d1e-03038749bcc6",
+  "creationTime": "Jul 1, 2019 9:53:33 AM",
+  "updateTime": "Jul 1, 2019 9:53:33 AM",
+  "name": "form",
+  "label": "LEC PSK",
+  "hidden": false,
+  "children": [
+    
+    {
+      "class": "com.biit.webforms.persistence.entity.Category",
+      "comparationId": "6b8570c2-31be-47ca-92a3-3b82257ab686",
+      "creationTime": "Jun 26, 2019 11:25:09 AM",
+      "updateTime": "Jul 1, 2019 9:50:53 AM",
+      "createdBy": 27225,
+      "updatedBy": 40275,
+      "name": "activityList",
+      "label": "PSK Activiteitenlijst",
+      "hidden": false,
+      "children": [
+        
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "7926fcd3-d3e3-4acf-84d3-13a28c27efac",
+          "creationTime": "Jun 28, 2019 9:52:25 AM",
+          "updateTime": "Jul 1, 2019 9:50:53 AM",
+          "createdBy": 27225,
+          "updatedBy": 40275,
+          "name": "others1",
+          "label": "Others:",
+          "hidden": false,
+          "children": [],
+          "answerType": "INPUT",
+          "answerFormat": "TEXT",
+          "answerSubformat": "TEXT",
+          "mandatory": false,
+          "horizontal": false,
+          "description": "",
+          "defaultValueString": "none"
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Category",
+      "comparationId": "003021eb-6dc6-41d5-bac7-7feed9e62a4c",
+      "creationTime": "Jun 26, 2019 11:28:31 AM",
+      "updateTime": "Jun 28, 2019 9:56:46 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "name": "scores",
+      "label": "PSK scoreformulier",
+      "hidden": false,
+      "children": [
+        {
+          "class": "com.biit.webforms.persistence.entity.Question",
+          "comparationId": "89ce3ba4-f23f-4854-be21-1e4da90d304f",
+          "creationTime": "Jun 26, 2019 11:28:51 AM",
+          "updateTime": "Jun 28, 2019 9:56:45 AM",
+          "createdBy": 27225,
+          "updatedBy": 27225,
+          "name": "walking",
+          "label": "Activiteit wandelen:\nHoe moeilijk was het voor u in de afgelopen week om deze activiteit uit te voeren?",
+          "hidden": false,
+          "children": [
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "bcf6253e-dc44-43e1-82c5-b53ede7ba5d6",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "0",
+              "label": "0",
+              "hidden": false,
+              "children": [],
+              "description": "0.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "18e90f90-1764-4b9b-a5c8-99f885006d83",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "1",
+              "label": "1",
+              "hidden": false,
+              "children": [],
+              "description": "1.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "a64ea284-5221-417b-96a8-b37611d622b6",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "2",
+              "label": "2",
+              "hidden": false,
+              "children": [],
+              "description": "2.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "952b3e54-c4ca-4a69-9514-67a18ef65cde",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "3",
+              "label": "3",
+              "hidden": false,
+              "children": [],
+              "description": "3.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "b5f0e713-6ec3-4fc5-94e6-78fbd3183a86",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "4",
+              "label": "4",
+              "hidden": false,
+              "children": [],
+              "description": "4.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "918b34f2-e55d-40a4-9407-ab8b1faaaf20",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "5",
+              "label": "5",
+              "hidden": false,
+              "children": [],
+              "description": "5.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "a74ebb0a-4fdb-40af-8e2d-68840fea20d7",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "6",
+              "label": "6",
+              "hidden": false,
+              "children": [],
+              "description": "6.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "44225b43-71ff-4441-9642-42e19e787593",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "7",
+              "label": "7",
+              "hidden": false,
+              "children": [],
+              "description": "7.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "fd146e70-48a2-41e2-9118-eb61a40b2f99",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "8",
+              "label": "8",
+              "hidden": false,
+              "children": [],
+              "description": "8.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "0823288a-9c76-4674-9f11-f3425641e532",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "updatedBy": 27225,
+              "name": "9",
+              "label": "9",
+              "hidden": false,
+              "children": [],
+              "description": "9.0"
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.Answer",
+              "comparationId": "cf182dbc-e5c7-486e-99c7-508cc2921f00",
+              "creationTime": "Jun 26, 2019 11:30:26 AM",
+              "updateTime": "Jun 26, 2019 11:30:26 AM",
+              "name": "10",
+              "label": "10",
+              "hidden": false,
+              "children": [],
+              "description": "10.0"
+            }
+          ],
+          "answerType": "SINGLE_SELECTION_SLIDER",
+          "mandatory": true,
+          "horizontal": false,
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "version": 1,
+  "organizationId": 29128,
+  "description": "Wanneer u de schuifbalk helemaal naar links schuift kost zijn is de betreffende klacht in het geheel niet op u van toepassing. Dit geeft een score van 1. Helemaal rechts is de betreffende klacht een grote beperkende factor in uw functioneren. Dit geeft een score van 10.",
+  "flows": [
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "6e56c619-e3bb-4787-9851-4f64df4ab401",
+      "creationTime": "Jun 28, 2019 9:26:20 AM",
+      "updateTime": "Jun 28, 2019 9:26:20 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "layingInBed"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "3a539435-7e50-41fe-a3ea-f3da25081946",
+      "creationTime": "Jun 28, 2019 8:10:26 AM",
+      "updateTime": "Jun 28, 2019 8:10:26 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "lifting"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "1f2a6db8-1192-4afa-9192-055e540ef537",
+          "creationTime": "Jun 28, 2019 8:10:26 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "lifting"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "e67ef24e-7e63-4412-ba3e-79287d707eda",
+      "creationTime": "Jun 28, 2019 8:03:03 AM",
+      "updateTime": "Jun 28, 2019 8:03:03 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "hobbys"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "fitness"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "2aaa97a9-8851-457d-83ae-40fb369f187e",
+          "creationTime": "Jun 28, 2019 8:03:03 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "hobbys"
+          ],
+          "answer_id": [
+            "activityList",
+            "hobbys",
+            "fitness"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "7408706d-eea1-4154-899e-aea4ecdaf728",
+      "creationTime": "Jun 28, 2019 9:22:30 AM",
+      "updateTime": "Jun 28, 2019 9:22:30 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "stand"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "ca8d0a0f-2bf1-4df3-b9b9-0b222eb6ee92",
+      "creationTime": "Jun 28, 2019 8:10:43 AM",
+      "updateTime": "Jun 28, 2019 8:10:43 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "drivingCarBus"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "2a7744f2-73ff-482c-a738-81e45763dd1f",
+          "creationTime": "Jun 28, 2019 8:10:42 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "driving-car-bus"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "2c53b406-4de8-4620-b161-25752799d3a6",
+      "creationTime": "Jun 28, 2019 8:09:51 AM",
+      "updateTime": "Jun 28, 2019 8:09:51 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "sitingLongTime"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "003984fd-f689-49f4-be41-1824da94c698",
+          "creationTime": "Jun 28, 2019 8:09:50 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "siting-long-time"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "8f3f8c52-cf6a-4b14-88fb-9e643fa4c191",
+      "creationTime": "Jun 28, 2019 8:02:05 AM",
+      "updateTime": "Jun 28, 2019 8:02:05 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "walking"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "walkOutdoorsNoLevel"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "8db37b44-a5ad-4e31-96b5-5cb767523551",
+          "creationTime": "Jun 28, 2019 8:02:04 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "walking"
+          ],
+          "answer_id": [
+            "activityList",
+            "walking",
+            "walk-outdoors-no-level"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "61c2092a-6b9c-4914-9898-20ab404e28e8",
+      "creationTime": "Jun 28, 2019 8:08:50 AM",
+      "updateTime": "Jun 28, 2019 8:08:50 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "turningOverBed"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "22d098f0-4731-451e-9509-80a0c84ecc87",
+          "creationTime": "Jun 28, 2019 8:08:50 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "turning-over-bed"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "7382e16d-0c24-422c-a21a-48821993d863",
+      "creationTime": "Jun 28, 2019 9:28:16 AM",
+      "updateTime": "Jun 28, 2019 9:28:16 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "lifting"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "c6303819-979e-4be0-883f-bb3dde3b98a0",
+      "creationTime": "Jun 28, 2019 9:53:23 AM",
+      "updateTime": "Jun 28, 2019 9:53:23 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "IND",
+        "NEK"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "activityList",
+        "others1"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenIn",
+          "comparationId": "df7d809a-3919-4e6d-aa18-f7385b68561b",
+          "creationTime": "Jun 28, 2019 9:53:22 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "IN",
+          "question_id": [
+            "IND",
+            "NEK"
+          ],
+          "values": [
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "18329684-cee0-4108-85ea-8bfb7bc949fc",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "1"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "b1b58861-0286-4698-b5ce-9242b171e5f9",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "2"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "3f3120c0-1583-470c-93e5-36e0dfc0c63d",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "3"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "4ea40c0c-ae29-4958-8729-114138df446f",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "4"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "3342a413-0b45-46e1-bfe7-fba5d1b771d5",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "5"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "4bba34ad-1664-4a5f-b730-5587376a1dfd",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "6"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "9e167e7f-4a91-43f8-9420-914d4b955012",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "7"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "00a3ba2e-35bb-4e88-ac30-1620f68e1663",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "8"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "f32272c7-cf90-49b2-abf4-45f451e8fea2",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "9"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "35f156ff-34b2-4319-b457-4d585ea9d103",
+              "creationTime": "Jun 28, 2019 9:53:22 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "10"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "d90a9764-8b9b-4565-9aaa-0060795be794",
+      "creationTime": "Jun 28, 2019 9:25:35 AM",
+      "updateTime": "Jun 28, 2019 9:25:35 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "makingBed"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "c12e1e9f-5227-4ca0-8afa-6062c5135765",
+      "creationTime": "Jun 28, 2019 9:25:48 AM",
+      "updateTime": "Jun 28, 2019 9:25:48 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "vacuuming"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "506e2ab1-846e-40c5-b3be-bf10e74a06a3",
+      "creationTime": "Jun 28, 2019 8:02:18 AM",
+      "updateTime": "Jun 28, 2019 8:02:18 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "walking"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "walkOutdoorsLevel"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "d737654e-eb5b-4a8d-ac57-cb6e118afdeb",
+          "creationTime": "Jun 28, 2019 8:02:17 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "walking"
+          ],
+          "answer_id": [
+            "activityList",
+            "walking",
+            "walk-outdoors-level"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "653469d7-10f8-4cf5-9fe2-b181cbe76c29",
+      "creationTime": "Jun 28, 2019 9:27:48 AM",
+      "updateTime": "Jun 28, 2019 9:27:48 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "sitingLongTime"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "11f1a396-955e-475e-8d5f-ca7895b3980a",
+      "creationTime": "Jun 28, 2019 9:27:39 AM",
+      "updateTime": "Jun 28, 2019 9:27:39 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "sitingDownInChair"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "b2904da6-84a6-4a8e-9550-e10688e97af1",
+      "creationTime": "Jun 28, 2019 9:55:57 AM",
+      "updateTime": "Jun 28, 2019 9:55:57 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "others1"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "be7aa009-081c-4d62-8542-0a5048561939",
+      "creationTime": "Jun 28, 2019 8:01:31 AM",
+      "updateTime": "Jun 28, 2019 8:01:31 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "walking"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "stand"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "b25b5aba-1442-4ed6-b8ef-85650d7aef51",
+          "creationTime": "Jun 28, 2019 8:01:31 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "walking"
+          ],
+          "answer_id": [
+            "activityList",
+            "walking",
+            "stand"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "cd3500c3-d2e2-46ff-b745-aec71f06bd42",
+      "creationTime": "Jun 28, 2019 9:25:59 AM",
+      "updateTime": "Jun 28, 2019 9:25:59 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "wearingObjects"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "c9a82aeb-98da-43ce-9da7-1801d31ac305",
+      "creationTime": "Jun 28, 2019 8:10:10 AM",
+      "updateTime": "Jun 28, 2019 8:10:10 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "getingInOutCar"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "955de2d3-27c0-4546-b3ee-2f37982e0bfe",
+          "creationTime": "Jun 28, 2019 8:10:10 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "geting-in-out-car"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "7ec2b7c8-1f9c-46d2-9746-86fa5ca03ddd",
+      "creationTime": "Jun 28, 2019 8:07:28 AM",
+      "updateTime": "Jun 28, 2019 8:07:28 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "household"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "vacuuming"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "a39b6644-ca17-494b-9299-1e547bf80236",
+          "creationTime": "Jun 28, 2019 8:07:27 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "household"
+          ],
+          "answer_id": [
+            "activityList",
+            "household",
+            "vacuuming"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "15a2e89b-9604-42e4-8462-fc6d3c119f88",
+      "creationTime": "Jun 28, 2019 9:25:13 AM",
+      "updateTime": "Jun 28, 2019 9:25:13 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "ironing"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "b50ca067-ba02-44fb-a9ea-20d6892fdbf8",
+      "creationTime": "Jun 28, 2019 9:31:38 AM",
+      "updateTime": "Jun 28, 2019 9:47:19 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "IND",
+        "NEK"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "activityList",
+        "household"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenIn",
+          "comparationId": "cc76b793-235d-4884-bf38-1c1da312c1b6",
+          "creationTime": "Jun 28, 2019 9:47:16 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "IN",
+          "question_id": [
+            "IND",
+            "NEK"
+          ],
+          "values": [
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "ac862045-93f1-4ea7-9276-1c1cf8ae3e43",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "9"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "b298c825-1ed6-41b4-b8b9-a598ed965103",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "1"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "c22d2c51-dc79-49d6-862e-bd0d9ef6247d",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "2"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "3d3aa70a-590f-4d64-8cd6-c3c9ded29302",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "3"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "e4871c3a-a848-407a-bc0a-6ddcbaa0464a",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "4"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "9208e6d1-49e5-4972-bbc5-19c78766bec9",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "5"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "e2851d82-e900-4e5f-927c-01af3af6deaf",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "6"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "6204c096-1656-4a97-8ce5-5c64632f3523",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "7"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "4cb6e277-44f5-4485-b0fd-2d256546dc01",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "8"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "24c2ecba-0e0d-4461-9132-1aafb3d6c8cb",
+              "creationTime": "Jun 28, 2019 9:47:16 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "10"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "f9bcba55-429c-4699-a6ce-01c0d734a879",
+      "creationTime": "Jun 28, 2019 8:11:04 AM",
+      "updateTime": "Jun 28, 2019 8:11:04 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "bendingOver"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "9fbd8c2f-0ded-4d3c-9df3-20b178ddf530",
+          "creationTime": "Jun 28, 2019 8:11:03 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "bending-over"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "ca1486a1-0b89-4cf6-a1a8-378fc69eb362",
+      "creationTime": "Jun 28, 2019 9:24:40 AM",
+      "updateTime": "Jun 28, 2019 9:24:40 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "bicycles"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "ac39d8f4-c85e-46a2-b86a-acde09612e01",
+      "creationTime": "Jun 28, 2019 9:25:24 AM",
+      "updateTime": "Jun 28, 2019 9:25:24 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "washingWindows"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "ba2792d1-f2ea-49f5-a05c-6df90ded4bdc",
+      "creationTime": "Jun 28, 2019 8:08:36 AM",
+      "updateTime": "Jun 28, 2019 8:08:36 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "sexualAtivities"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "58b5cab5-1ad7-4e04-a995-642a822a95e1",
+          "creationTime": "Jun 28, 2019 8:08:35 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "sexual-ativities"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "3eba6de6-65b6-4ed7-b610-7ec831fb6dd7",
+      "creationTime": "Jun 28, 2019 9:27:58 AM",
+      "updateTime": "Jun 28, 2019 9:27:58 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "getingInOutCar"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "e8dbf3c5-2b35-4f8c-8147-9da234873bdb",
+      "creationTime": "Jun 28, 2019 9:31:28 AM",
+      "updateTime": "Jun 28, 2019 9:44:24 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "IND",
+        "NEK"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "activityList",
+        "hobbys"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenIn",
+          "comparationId": "3e496891-76ec-446e-a0c4-68a75c0ee703",
+          "creationTime": "Jun 28, 2019 9:44:23 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "IN",
+          "question_id": [
+            "IND",
+            "NEK"
+          ],
+          "values": [
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "120e713e-162c-4f26-a303-7180268ccd93",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "2"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "c42c865c-b47c-4d07-94dc-9e7efdda41bb",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "3"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "a4fb837f-e2b8-45b5-b96c-a699d512a69c",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "4"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "993dffc7-c93f-4405-9dc9-b8b9cc594782",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "5"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "3fdd31ad-57fa-489f-9624-ef12337d1a97",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "6"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "479bdba5-e769-4d02-b020-756d4b5a93c4",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "7"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "250e2e46-bb93-4bbc-afc2-51e12cf3c008",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "8"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "6afb5ae6-177e-4d16-8dfd-7c8585ae581b",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "9"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "72bd5397-e66e-41e8-ba13-87607525c237",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "10"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "b834c2ef-8dc8-4c55-99eb-68bbab91a053",
+              "creationTime": "Jun 28, 2019 9:44:23 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "85501812-f78e-4e96-9d96-621d6736d224",
+      "creationTime": "Jun 28, 2019 9:27:29 AM",
+      "updateTime": "Jun 28, 2019 9:27:29 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "gettingUpFromChair"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "c81df995-30ff-4a26-9512-330a08e50086",
+      "creationTime": "Jun 28, 2019 8:09:30 AM",
+      "updateTime": "Jun 28, 2019 8:09:30 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "sitingDownInChair"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "8dc194de-bdea-406f-aef7-d1b275b37639",
+          "creationTime": "Jun 28, 2019 8:09:30 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "siting-down-in-chair"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "94094eed-56fb-4e04-bffd-ebca213289af",
+      "creationTime": "Jun 28, 2019 9:26:28 AM",
+      "updateTime": "Jun 28, 2019 9:26:28 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "sexualAtivities"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "719c0927-a4ac-4766-b8d6-1a60aeb879d0",
+      "creationTime": "Jun 28, 2019 9:24:15 AM",
+      "updateTime": "Jun 28, 2019 9:24:15 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "walkOutdoorsLevel"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "62d5de8a-cf92-4a5f-8271-079131cb3ca2",
+      "creationTime": "Jun 28, 2019 9:55:42 AM",
+      "updateTime": "Jul 1, 2019 9:53:22 AM",
+      "createdBy": 27225,
+      "updatedBy": 40275,
+      "origin_id": [
+        "activityList",
+        "others1"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "walking"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenEmpty",
+          "comparationId": "6e160716-0ad7-4374-a0ba-849bd680ec4a",
+          "creationTime": "Jul 1, 2019 9:53:16 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EMPTY",
+          "question_id": [
+            "activityList",
+            "others1"
+          ],
+          "subformat": "TEXT",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "93141237-254e-4286-8dd8-70228cca5891",
+      "creationTime": "Jun 28, 2019 8:01:15 AM",
+      "updateTime": "Jun 28, 2019 8:01:15 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "walking"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "walking"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "3d53658e-6fe0-4f66-b130-f9d1eb2946fe",
+          "creationTime": "Jun 28, 2019 8:01:05 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "walking"
+          ],
+          "answer_id": [
+            "activityList",
+            "walking",
+            "hike-walking"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "10fc3a7d-2cc0-478a-8f48-17135d63c7fa",
+      "creationTime": "Jun 28, 2019 8:02:31 AM",
+      "updateTime": "Jun 28, 2019 8:02:31 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "walking"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "running"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "fad50118-cda1-4097-90d1-aaafc8c8c594",
+          "creationTime": "Jun 28, 2019 8:02:30 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "walking"
+          ],
+          "answer_id": [
+            "activityList",
+            "walking",
+            "running"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "0f5a31b4-b92b-4b2a-bec9-6ce6851cd449",
+      "creationTime": "Jun 28, 2019 8:06:43 AM",
+      "updateTime": "Jun 28, 2019 8:06:43 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "household"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "ironing"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "f671f6e3-0a46-47bd-ab91-0e68b746fc02",
+          "creationTime": "Jun 28, 2019 8:06:42 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "household"
+          ],
+          "answer_id": [
+            "activityList",
+            "household",
+            "ironing"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "079a2618-a224-41b2-a664-e380d51a7a60",
+      "creationTime": "Jun 28, 2019 9:31:14 AM",
+      "updateTime": "Jun 28, 2019 9:44:31 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "IND",
+        "NEK"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "activityList",
+        "walking"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenIn",
+          "comparationId": "3fa57155-bf42-466a-a702-ff7eb9f66a2a",
+          "creationTime": "Jun 28, 2019 9:44:30 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "IN",
+          "question_id": [
+            "IND",
+            "NEK"
+          ],
+          "values": [
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "f480212f-e269-4e48-9d84-6941521ad5e2",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "4"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "fd573df6-278c-437c-bde8-11db88b2a08d",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "1"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "22cafecc-a728-4d14-9303-ad0120ac7fcf",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "2"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "1de9c4eb-bc83-42ee-a480-e91479f5975a",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "3"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "0f971d7e-1747-4f26-94e0-e7c2cca938a5",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "5"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "8e5e0876-b5cd-4318-9475-1f49a35025d6",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "6"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "31a78b7e-fb41-46c9-bf42-e8e722dccb48",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "7"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "005ee5b3-0155-44ac-a88a-25ce4029e784",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "8"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "dff8bf49-b1c1-43e7-8b7e-ebf31ac01773",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "9"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "09b38e84-9d3b-4261-8f4a-cd9329fd29f0",
+              "creationTime": "Jun 28, 2019 9:44:30 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "10"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "5ebcea6e-8cd9-4f51-ad20-8f33f2012ab2",
+      "creationTime": "Jun 28, 2019 8:03:20 AM",
+      "updateTime": "Jun 28, 2019 8:03:20 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "hobbys"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "gardening"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "999f5f3e-4007-4237-bdb6-082b008686e4",
+          "creationTime": "Jun 28, 2019 8:03:19 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "hobbys"
+          ],
+          "answer_id": [
+            "activityList",
+            "hobbys",
+            "gardening"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "2d6fb4bb-d8fd-4098-9936-2faccfa0e1c9",
+      "creationTime": "Jun 28, 2019 8:07:13 AM",
+      "updateTime": "Jun 28, 2019 8:07:13 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "household"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "makingBed"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "175f9fb5-9639-4410-933e-d2c606e1fccb",
+          "creationTime": "Jun 28, 2019 8:07:12 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "household"
+          ],
+          "answer_id": [
+            "activityList",
+            "household",
+            "making-bed"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "84f61330-e567-4361-9621-c6020f68b932",
+      "creationTime": "Jun 28, 2019 9:23:49 AM",
+      "updateTime": "Jun 28, 2019 9:23:49 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "climbingStairs"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "1116a725-1ff6-4d32-9645-421b748f6caf",
+      "creationTime": "Jun 28, 2019 8:09:17 AM",
+      "updateTime": "Jun 28, 2019 8:09:17 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "gettingUpFromChair"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "da7476bc-3300-4f1f-8732-74a927edada0",
+          "creationTime": "Jun 28, 2019 8:09:16 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "getting-up-from-chair"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "be9c2a7a-9563-43b2-a59b-c4f6cc76ec04",
+      "creationTime": "Jun 28, 2019 8:08:18 AM",
+      "updateTime": "Jun 28, 2019 8:08:18 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "layingInBed"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "8b0e14ef-1772-48eb-9a87-312ce45e4aca",
+          "creationTime": "Jun 28, 2019 8:08:17 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "laying-in-bed"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "4988baae-bcc1-4841-9dad-9449ceae66dc",
+      "creationTime": "Jun 28, 2019 9:28:26 AM",
+      "updateTime": "Jun 28, 2019 9:28:26 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "bendingOver"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "a87ce0de-d6a1-471d-885d-31b5f0f656ea",
+      "creationTime": "Jun 28, 2019 8:09:03 AM",
+      "updateTime": "Jun 28, 2019 8:09:03 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "gettingOutBed"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "0dacfbe6-ef72-4ea2-a3fd-a6dee8beab9f",
+          "creationTime": "Jun 28, 2019 8:09:02 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "getting-out-bed"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "a4f0b404-8ff7-4d84-92c9-143eff626cda",
+      "creationTime": "Jun 28, 2019 8:02:49 AM",
+      "updateTime": "Jun 28, 2019 8:02:49 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "hobbys"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "bicycles"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "0bcd6342-d8c7-4163-b3c2-00cbad298ac5",
+          "creationTime": "Jun 28, 2019 8:02:48 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "hobbys"
+          ],
+          "answer_id": [
+            "activityList",
+            "hobbys",
+            "bicycles"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "ddac48d7-fd9c-4fb5-a5ef-6f272b3fe908",
+      "creationTime": "Jun 28, 2019 9:25:03 AM",
+      "updateTime": "Jun 28, 2019 9:25:03 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "gardening"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "75242f66-28bb-4619-83a5-c93162aee7c6",
+      "creationTime": "Jun 28, 2019 9:26:09 AM",
+      "updateTime": "Jun 28, 2019 9:26:09 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "dressingUndressing"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "3be36578-4c54-4ee5-99c7-f55d4b366b3f",
+      "creationTime": "Jun 28, 2019 8:08:01 AM",
+      "updateTime": "Jun 28, 2019 8:08:01 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "dressingUndressing"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "86ea3ca7-5943-4db9-9203-8beb8b43de74",
+          "creationTime": "Jun 28, 2019 8:08:00 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "activitiesDailyLiving"
+          ],
+          "answer_id": [
+            "activityList",
+            "activitiesDailyLiving",
+            "dressing-undressing"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "44b4519d-3d00-49a7-81f5-1deb11ff5a00",
+      "creationTime": "Jun 28, 2019 8:01:50 AM",
+      "updateTime": "Jun 28, 2019 8:01:50 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "walking"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "climbingStairs"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "7613462d-0d36-471e-9afa-0bbb1230abe2",
+          "creationTime": "Jun 28, 2019 8:01:49 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "walking"
+          ],
+          "answer_id": [
+            "activityList",
+            "walking",
+            "climbing-stairs"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "5296e181-15d8-4be2-b0d0-766eb59e6238",
+      "creationTime": "Jun 28, 2019 9:59:05 AM",
+      "updateTime": "Jun 28, 2019 9:59:05 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "others1"
+      ],
+      "flowType": "END_FORM",
+      "others": true
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "8bce338f-787d-4e38-937c-00fae4eb826a",
+      "creationTime": "Jun 28, 2019 9:24:02 AM",
+      "updateTime": "Jun 28, 2019 9:24:02 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "walkOutdoorsNoLevel"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "289a0d3b-4ca6-4b30-bbc5-271c986ada23",
+      "creationTime": "Jun 28, 2019 9:28:07 AM",
+      "updateTime": "Jun 28, 2019 9:28:07 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "drivingCarBus"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "d99ef555-ddcc-4de0-86b3-a035f452b9f1",
+      "creationTime": "Jun 28, 2019 9:31:49 AM",
+      "updateTime": "Jun 28, 2019 9:44:11 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "IND",
+        "NEK"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "activityList",
+        "activitiesDailyLiving"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenIn",
+          "comparationId": "85b557b7-7451-4020-8b6f-e1e9fdc59e7f",
+          "creationTime": "Jun 28, 2019 9:44:07 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "IN",
+          "question_id": [
+            "IND",
+            "NEK"
+          ],
+          "values": [
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "38be8929-bae6-4598-912a-8f7af89ee993",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "7"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "f010d996-0314-4223-9018-6c3630ba3ce2",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "8"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "d76d32b6-2940-4df9-b2e7-442809ba4d63",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "9"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "71431278-76b4-400a-ba50-10a074d11e4e",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "10"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "150f728c-0260-4c4f-aaf5-4d6c61175316",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "6"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "b7136a91-36b9-4e06-9988-87ac48811f84",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "1"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "14336839-d670-42df-93b8-f7bdc7b393d9",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "2"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "adc6d6a9-772e-454b-827d-2eaa82e222d3",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "3"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "1e29e210-a3d1-469d-b708-56314c84df05",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "4"
+              ]
+            },
+            {
+              "class": "com.biit.webforms.persistence.entity.condition.TokenInValue",
+              "comparationId": "86a5ca0b-bf15-40a3-bd05-7297fc1be645",
+              "creationTime": "Jun 28, 2019 9:44:07 AM",
+              "updateTime": "Jul 1, 2019 9:53:33 AM",
+              "answer_id": [
+                "IND",
+                "NEK",
+                "5"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "94f520d7-ac95-4a9b-8a5b-50040adc71f5",
+      "creationTime": "Jun 28, 2019 8:06:56 AM",
+      "updateTime": "Jun 28, 2019 8:06:56 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "household"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "washingWindows"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "0786a4ad-3a18-4640-9607-347cb4aa3f67",
+          "creationTime": "Jun 28, 2019 8:06:56 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "household"
+          ],
+          "answer_id": [
+            "activityList",
+            "household",
+            "washing-windows"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "855c79eb-ccfe-4a19-8227-cf7295867ae4",
+      "creationTime": "Jun 28, 2019 9:24:51 AM",
+      "updateTime": "Jun 28, 2019 9:24:51 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "fitness"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "d22315b8-d84d-4e61-98bb-ff4b3d49ba43",
+      "creationTime": "Jun 28, 2019 9:24:25 AM",
+      "updateTime": "Jun 28, 2019 9:24:25 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "running"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "7ea72968-5253-4c5c-8b4b-22a513c0293e",
+      "creationTime": "Jun 28, 2019 9:21:40 AM",
+      "updateTime": "Jun 28, 2019 9:21:40 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "walking"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "f8613dc6-279f-42be-9b54-a6b7a358b00f",
+      "creationTime": "Jun 28, 2019 9:27:05 AM",
+      "updateTime": "Jun 28, 2019 9:27:05 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "turningOverBed"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "771344db-5f4a-402f-a32f-7c05f1990a35",
+      "creationTime": "Jun 28, 2019 8:07:43 AM",
+      "updateTime": "Jun 28, 2019 8:07:43 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "activityList",
+        "household"
+      ],
+      "flowType": "NORMAL",
+      "destiny_id": [
+        "scores",
+        "wearingObjects"
+      ],
+      "others": false,
+      "condition": [
+        {
+          "class": "com.biit.webforms.persistence.entity.condition.TokenComparationAnswer",
+          "comparationId": "46682e1d-b395-43aa-9a00-985b01c35a2d",
+          "creationTime": "Jun 28, 2019 8:07:42 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "type": "EQ",
+          "question_id": [
+            "activityList",
+            "household"
+          ],
+          "answer_id": [
+            "activityList",
+            "household",
+            "wearing-objects"
+          ]
+        }
+      ]
+    },
+    {
+      "class": "com.biit.webforms.persistence.entity.Flow",
+      "comparationId": "c405ed80-7a01-457e-82ef-1f90f711967c",
+      "creationTime": "Jun 28, 2019 9:27:16 AM",
+      "updateTime": "Jun 28, 2019 9:27:16 AM",
+      "createdBy": 27225,
+      "updatedBy": 27225,
+      "origin_id": [
+        "scores",
+        "gettingOutBed"
+      ],
+      "flowType": "END_FORM",
+      "others": false,
+      "condition": []
+    }
+  ],
+  "webserviceCalls": [
+    {
+      "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCall",
+      "comparationId": "b5cbf77f-875c-4073-9a75-049090668dce",
+      "creationTime": "May 23, 2018 9:49:52 AM",
+      "updateTime": "Jul 1, 2019 9:53:33 AM",
+      "name": "getCustomerData",
+      "webserviceName": "getPatientByGuardCode",
+      "formElementTrigger_id": [
+        "PersonalDetails",
+        "user_code"
+      ],
+      "inputLinks": [
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallInputLink",
+          "comparationId": "e2cca639-4b37-46f7-bfe8-06a640cb5ce8",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "user_guard",
+          "formElement_id": [
+            "PersonalDetails",
+            "user_code"
+          ],
+          "errors": [
+            {
+              "errorCode": "not valid",
+              "errorMessage": ""
+            },
+            {
+              "errorCode": "not exist",
+              "errorMessage": ""
+            }
+          ],
+          "validationXpath": "/valid"
+        }
+      ],
+      "outputLinks": [
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "5022e230-fc25-4d66-8728-4ab3672e7274",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "birthdate",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_birthday"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "9f48b195-9473-412b-a2c0-f5142bb1e8b8",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "firstname",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_first_name"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "3e150129-c877-432c-9a35-bb43db0652f4",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "address",
+          "formElement_id": [
+            "PersonalDetails",
+            "person_address_street"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "296ebe88-3139-43fb-a530-48e5e9c3de8b",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "city",
+          "formElement_id": [
+            "PersonalDetails",
+            "person_address_city"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "709bbbc1-a45f-44e7-8da1-7a65bf76f1e6",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "gender",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_gender"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "84897475-e7ca-4ba4-9aaf-db34ea5333d1",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "initials",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_initials"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "66382c85-2663-4f2c-a1dc-e4d5623b588a",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "email",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_email_address"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "d241f6fb-3fdf-4068-9a0d-967b7d4fd5d7",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "comparationId",
+          "formElement_id": [
+            "PersonalDetails",
+            "user_comparation_id"
+          ],
+          "isEditable": false
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "9bc96174-874d-42e6-8b8e-3038952cb422",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "mobilePhone",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_phone"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "701f13d6-3dde-43ff-87f3-04c61b4ad11c",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "lastname",
+          "formElement_id": [
+            "PersonalDetails",
+            "profile_last_name"
+          ],
+          "isEditable": true
+        },
+        {
+          "class": "com.biit.webforms.persistence.entity.webservices.WebserviceCallOutputLink",
+          "comparationId": "b8b33ca6-e0a2-4634-8789-c31c855ef556",
+          "creationTime": "May 23, 2018 9:49:52 AM",
+          "updateTime": "Jul 1, 2019 9:53:33 AM",
+          "webservicePort": "postalcode",
+          "formElement_id": [
+            "PersonalDetails",
+            "person_address_postal"
+          ],
+          "isEditable": true
+        }
+      ]
+    }
+  ]
+}
