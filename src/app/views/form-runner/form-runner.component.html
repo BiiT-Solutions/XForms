@@ -8,12 +8,14 @@
       <biit-icon name="biit_icon" style="display: block; width: 2.5rem;" />
       <biit-icon name="biit_logo" style="display: block; width: 5rem;" />
     </div>
-    <div *ngIf="loading" style="gap: 1rem">
-      <h1>Bibbidi-bobbidi-boo! We're bringing your wishes to you.</h1>
+    <div *ngIf="loading" style="gap: 2rem">
+      <h1>Bibbidi-bobbidi-boo!</h1>
+      <h2>We're bringing your wishes to you.</h2>
       <biit-progress-bar [type]="BiitProgressBarType.INDETERMINATE"></biit-progress-bar>
     </div>
-    <div *ngIf="!loading">
-      <h1>Bibbidi-bobbidi-D'Oh! We made some wrong spell and your form disappeared!</h1>
+    <div *ngIf="!loading" style="gap: 2rem">
+      <h1>Bibbidi-bobbidi-D'Oh!</h1>
+      <h2>We made some wrong spell and your form disappeared!</h2>
       <p>Please, send an owl to one of our sourcerers and we'll try to fix our mess</p>
     </div>
   </div>

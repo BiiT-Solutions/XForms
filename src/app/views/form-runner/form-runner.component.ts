@@ -15,7 +15,7 @@ export class FormRunnerComponent implements AfterViewInit {
   constructor(private http: HttpClient, private route: ActivatedRoute ) { }
 
   protected form: Form | undefined;
-  protected loading: boolean = false;
+  protected loading: boolean = true;
   protected readonly BiitProgressBarType = BiitProgressBarType;
 
   ngAfterViewInit(): void {
