@@ -25,7 +25,7 @@ export class FormRunnerComponent implements AfterViewInit {
     this.route.queryParams.subscribe({
       next: (params) => {
         if (params['form']) {
-          const path = `${Constants.FORM_PATH}/${params['form']}.json`
+          const path = `assets/forms/${params['form']}.json`
           this.http.get(path)
             .subscribe({
               next: (form: any) => {

@@ -1,11 +1,11 @@
 {
   "name": "xforms",
-  "version": "0.0.6",
+  "version": "0.0.18",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build": "ng build --output-hashing=all --base-href /xforms",
+    "watch": "ng build --output-hashing=all --watch --configuration development",
     "test": "ng test",
     "prepare:docs": "cpx ./README.md ./dist/xforms && echo \"{\\\"name\\\": \\\"`node -e \"console.log(require('./package.json').name);\"\n`\\\", \\\"version\\\": \\\"`node -e \"console.log(require('./package.json').version);\"\n`\\\"}\" > ./dist/xforms/package.json",
     "prepare:publication": "npm run build && npm run prepare:docs && npm run prepare:translations",
