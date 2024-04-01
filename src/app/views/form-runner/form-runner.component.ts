@@ -1,9 +1,10 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute} from "@angular/router";
-import {Form} from "x-forms-lib";
+import {Form, FormResult} from "x-forms-lib";
 import {Constants} from "x-forms-lib";
 import {BiitProgressBarType} from "biit-ui/info";
+import {Environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-form-runner',
@@ -15,6 +16,7 @@ export class FormRunnerComponent implements AfterViewInit {
   constructor(private http: HttpClient, private route: ActivatedRoute ) { }
 
   protected form: Form | undefined;
+  protected submitted: boolean = false;
   protected loading: boolean = true;
   protected readonly BiitProgressBarType = BiitProgressBarType;
 
@@ -37,5 +39,15 @@ export class FormRunnerComponent implements AfterViewInit {
       },
       error: () => this.loading = false
     })
+  }
+
+  onCompleted(formResult: FormResult) {
+    this.http.post(Environment.ROOT_URL + Environment.KAFKA_PROXY_PATH, formResult).subscribe({
+      next: () => {
+        this.submitted = true;
+      }, error: () => {
+        console.error('Error sending form to Kafka, check network tab');
+      }
+    });
   }
 }
