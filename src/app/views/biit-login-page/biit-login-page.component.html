@@ -1,0 +1,5 @@
+<biit-progress-bar *ngIf="waiting" [type]="BiitProgressBarType.INDETERMINATE"></biit-progress-bar>
+<biit-login *ngIf="!waiting"
+  (onLogin)="login($event)">
+</biit-login>
+
