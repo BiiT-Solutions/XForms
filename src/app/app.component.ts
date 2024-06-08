@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {BiitIconService} from "biit-ui/icon";
 import {completeIconSet} from "biit-icons-collection";
 import {KafkaEventStructureRootService} from "kafka-event-structure-lib";
-import {HttpClient} from "@angular/common/http";
-import {BiitSnackbarService, BiitSnackbarVerticalPosition, BiitSnackbarHorizontalPosition} from "biit-ui/info";
+import {BiitSnackbarHorizontalPosition, BiitSnackbarService, BiitSnackbarVerticalPosition} from "biit-ui/info";
 import {Environment} from "../environments/environment";
+import {TranslocoService} from "@ngneat/transloco";
 
 
 @Component({
@@ -17,11 +17,13 @@ export class AppComponent {
   constructor(
     biitSnackbarService: BiitSnackbarService,
     biitIconService: BiitIconService,
-    rootService: KafkaEventStructureRootService
+    rootService: KafkaEventStructureRootService,
+    transloco: TranslocoService
     ) {
     biitSnackbarService.setPosition(BiitSnackbarVerticalPosition.TOP, BiitSnackbarHorizontalPosition.CENTER);
     biitIconService.registerIcons(completeIconSet);
     rootService.serverUrl = new URL(`${Environment.ROOT_URL}${Environment.KAFKA_PROXY_PATH}`);
+    transloco.setActiveLang(navigator.language.split('-')[0]);
   }
 
 }
