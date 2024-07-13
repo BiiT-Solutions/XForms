@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-hashing=all --base-href /xforms --configuration development",
+    "build": "ng build --output-hashing=all --base-href /xforms",
     "watch": "ng build --output-hashing=all --watch --configuration development",
     "test": "ng test",
     "prepare:docs": "cpx ./README.md ./dist/xforms && echo \"{\\\"name\\\": \\\"`node -e \"console.log(require('./package.json').name);\"\n`\\\", \\\"version\\\": \\\"`node -e \"console.log(require('./package.json').version);\"\n`\\\"}\" > ./dist/xforms/package.json",

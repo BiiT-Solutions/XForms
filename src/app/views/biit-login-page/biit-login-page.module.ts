@@ -1,4 +1,4 @@
-import {isDevMode, NgModule} from '@angular/core';
+import {NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BiitLoginPageComponent } from './biit-login-page.component';
 import {BiitLoginModule} from "biit-ui/login";
