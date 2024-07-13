@@ -25,20 +25,6 @@ import {HeaderInterceptor} from "../../config/header-interceptor";
     BiitLoginModule,
     TranslocoRootModule,
     BiitProgressBarModule
-  ],
-  providers: [
-    {
-      provide: TRANSLOCO_CONFIG,
-      useValue: translocoConfig({
-        availableLangs: ['en', 'es', 'nl'],
-        defaultLang: 'en',
-        fallbackLang: 'en',
-        reRenderOnLangChange: true,
-        prodMode: !isDevMode()
-      })
-    },
-    { provide: TRANSLOCO_LOADER, useClass: TranslocoHttpLoader },
-    {provide: HTTP_INTERCEPTORS, useClass: HeaderInterceptor, multi: true}
   ]
 })
 export class BiitLoginPageModule { }

@@ -17,13 +17,12 @@ export class AppComponent {
   constructor(
     biitSnackbarService: BiitSnackbarService,
     biitIconService: BiitIconService,
-    rootService: KafkaEventStructureRootService,
-    transloco: TranslocoService
+    rootService: KafkaEventStructureRootService
     ) {
     biitSnackbarService.setPosition(BiitSnackbarVerticalPosition.TOP, BiitSnackbarHorizontalPosition.CENTER);
     biitIconService.registerIcons(completeIconSet);
     rootService.serverUrl = new URL(`${Environment.ROOT_URL}${Environment.KAFKA_PROXY_PATH}`);
-    transloco.setActiveLang(navigator.language.split('-')[0]);
+    //transloco.setActiveLang(navigator.language.split('-')[0]);
   }
 
 }
