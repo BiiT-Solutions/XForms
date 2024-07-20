@@ -11,6 +11,11 @@ export class HeaderInterceptor implements HttpInterceptor {
 
   }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    // If the request already has an Authorization header, do not add one
+    if (req.headers.get(Constants.HEADERS.AUTHORIZATION)) {
+      return next.handle(req);
+    }
+
     const request: HttpRequest<any> = req.clone({
       headers: req.headers.append(Constants.HEADERS.AUTHORIZATION,
         'Bearer ' +  this.kafkaSessionService.getToken())

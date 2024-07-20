@@ -11,6 +11,11 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: 'preview',
+    data: {preview: true},
+    loadChildren: () => import('./views/form-runner/form-runner.module').then(m => m.FormRunnerModule)
+  },
+  {
     path: 'login',
     loadChildren: () => defaultRoute
   },
