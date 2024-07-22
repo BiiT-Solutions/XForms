@@ -62,7 +62,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   }
 
   onCompleted(formResult: FormResult) {
-    this.http.post(Environment.ROOT_URL + Environment.KAFKA_PROXY_PATH + Environment.FORM_PATH, formResult).subscribe({
+    this.http.post(Environment.KAFKA_PROXY_URL + Environment.FORM_PATH, formResult).subscribe({
       next: (): void => {
         this.submitted = true;
       }, error: (): void => {

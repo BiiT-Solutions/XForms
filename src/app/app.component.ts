@@ -22,7 +22,7 @@ export class AppComponent {
     ) {
     biitSnackbarService.setPosition(BiitSnackbarVerticalPosition.TOP, BiitSnackbarHorizontalPosition.CENTER);
     biitIconService.registerIcons(completeIconSet);
-    rootService.serverUrl = new URL(`${Environment.ROOT_URL}${Environment.KAFKA_PROXY_PATH}`);
+    rootService.serverUrl = new URL(`${Environment.KAFKA_PROXY_URL}`);
     transloco.setActiveLang(navigator.language.split('-')[0]);
   }
 
