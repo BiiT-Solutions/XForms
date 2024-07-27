@@ -44,14 +44,21 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
           })
         } else {
           if (params['form']) {
-            const path: string = `assets/forms/${params['form']}.json`
-            this.http.get(path)
-              .subscribe({
-                next: (form: any): void => {
-                  this.form = Form.clone(form);
-                },
-                error: (): boolean => this.loading = false
-              });
+            if (params['version'] && params['organization']) {
+              this.webFormsService.getPublished(params['form'], params['version'], params['organization']).subscribe(
+                {
+                  next: (form: Form): void => {
+                    this.form = Form.clone(form);
+                  },
+                  error: (): void => {
+                    console.error('Form was not found on remote service. We are trying to check the deployed ones.')
+                    this.loadLocal(params['form'])
+                  }
+                }
+              )
+            } else {
+              this.loadLocal(params['form'])
+            }
           } else {
             this.loading = false
           }
@@ -61,6 +68,16 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
     })
   }
 
+  loadLocal(form: string) {
+    const path: string = `assets/forms/${form}.json`
+    this.http.get(path)
+      .subscribe({
+        next: (form: any): void => {
+          this.form = Form.clone(form);
+        },
+        error: (): boolean => this.loading = false
+      });
+  }
   onCompleted(formResult: FormResult) {
     this.http.post(Environment.KAFKA_PROXY_URL + Environment.FORM_PATH, formResult).subscribe({
       next: (): void => {
