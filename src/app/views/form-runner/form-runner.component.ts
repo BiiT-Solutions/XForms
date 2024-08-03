@@ -90,12 +90,14 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
       });
   }
   onCompleted(formResult: FormResult) {
-    this.http.post(Environment.KAFKA_PROXY_URL + Environment.FORM_PATH, formResult).subscribe({
-      next: (): void => {
-        this.submitted = true;
-      }, error: (): void => {
-        console.error('Error sending form to Kafka, check network tab');
-      }
-    });
+    if (!this.preview) {
+      this.http.post(Environment.KAFKA_PROXY_URL + Environment.FORM_PATH, formResult).subscribe({
+        next: (): void => {
+          this.submitted = true;
+        }, error: (): void => {
+          console.error('Error sending form to Kafka, check network tab');
+        }
+      });
+    }
   }
 }
