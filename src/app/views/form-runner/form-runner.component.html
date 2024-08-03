@@ -1,7 +1,9 @@
 <div *ngIf="form">
   <biit-x-form [form]="form"
                [submitted]="submitted"
-               (completed)="onCompleted($event)" ></biit-x-form>
+               (completed)="onCompleted($event)"
+               (closed)="submitted = false"
+  ></biit-x-form>
 </div>
 <div *ngIf="!form" class="empty-form">
   <div class="bgi"></div>
