@@ -13,14 +13,14 @@
       <biit-icon name="biit_logo" style="display: block; width: 5rem;" />
     </div>
     <div *ngIf="loading" style="gap: 2rem">
-      <h1>Bibbidi-bobbidi-boo!</h1>
-      <h2>We're bringing your wishes to you.</h2>
+      <h1>Please wait...</h1>
+      <h2>We're fetching your data and this could take a few seconds.</h2>
       <biit-progress-bar [type]="BiitProgressBarType.INDETERMINATE"></biit-progress-bar>
     </div>
     <div *ngIf="!loading" style="gap: 2rem">
-      <h1>Bibbidi-bobbidi-D'Oh!</h1>
-      <h2>We made some wrong spell and your form disappeared!</h2>
-      <p>Please, send an owl to one of our sourcerers and we'll try to fix our mess</p>
+      <h1>Error retrieving data</h1>
+      <h2>Unfortunately, we can not display the content of your request, right now.</h2>
+      <p>If the issue persists, please contact support to sort out. </p>
     </div>
   </div>
 </div>
