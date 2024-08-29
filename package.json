@@ -1,6 +1,6 @@
 {
   "name": "xforms",
-  "version": "0.1.1",
+  "version": "0.1.39",
   "scripts": {
     "ng": "ng",
     "start": "npm run prepare:translations && ng serve",
@@ -28,6 +28,7 @@
     "zone.js": "~0.12.0",
     "x-forms-lib": "latest",
     "kafka-event-structure-lib": "latest",
+    "user-manager-structure-lib": "latest",
     "fast-copy": "3.0.2"
   },
   "devDependencies": {

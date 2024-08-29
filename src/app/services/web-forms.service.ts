@@ -16,4 +16,11 @@ export class WebFormsService {
       {headers: {Authorization: `Basic ${btoa(Environment.WEB_FORMS_CREDENTIALS)}`}}
     );
   }
+
+  getPublished(formName: string, version: string, organization: string): Observable<Form> {
+    return this.http.get<Form>(
+      `${Environment.WEB_FORMS_URL}/rest/published-forms/${formName}/versions/${version}/organizations/${organization}`,
+      {headers: {Authorization: `Basic ${btoa(Environment.WEB_FORMS_CREDENTIALS)}`}}
+    );
+  }
 }
