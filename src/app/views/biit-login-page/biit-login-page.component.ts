@@ -9,6 +9,7 @@ import {completeIconSet} from "biit-icons-collection";
 import {ActivatedRoute, Router} from "@angular/router";
 import {LoginRequest, User} from "authorization-services-lib";
 import {AuthService, SessionService} from "kafka-event-structure-lib";
+import {UserService} from "user-manager-structure-lib";
 
 @Component({
   selector: 'biit-login-page',
@@ -28,6 +29,7 @@ export class BiitLoginPageComponent implements OnInit {
   protected waiting: boolean = true;
   constructor(private authService: AuthService,
               private sessionService: SessionService,
+              private userService: UserService,
               private biitSnackbarService: BiitSnackbarService,
               biitIconService: BiitIconService,
               private activateRoute: ActivatedRoute,
@@ -102,4 +104,18 @@ export class BiitLoginPageComponent implements OnInit {
     });
   }
 
+  protected onResetPassword(email: string) {
+    this.userService.resetPassword(email).subscribe({
+      next: () => {
+        this.translocoService.selectTranslate('success', {},  {scope: 'biit-ui/login'}).subscribe(msg => {
+          this.biitSnackbarService.showNotification(msg, NotificationType.SUCCESS, null, 5);
+        });
+      },
+      error: () => {
+        this.translocoService.selectTranslate('error', {},  {scope: 'biit-ui/login'}).subscribe(msg => {
+          this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 5);
+        });
+      }
+    })
+  }
 }
