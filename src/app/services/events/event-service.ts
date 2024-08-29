@@ -1,14 +1,13 @@
 import {Injectable} from "@angular/core";
-import {Subject} from "../../models/events/subject";
+import {Subject} from "./subject";
 import {Constants} from "../../shared/constants";
 import {Event, EventService as KafkaEventService} from "kafka-event-structure-lib";
 import {Observable} from "rxjs";
-import {OrganizationService} from "user-manager-structure-lib";
 
 @Injectable({providedIn: 'root'})
 export class EventService {
-  static readonly REPLY_TO: string = "CADT";
-  static readonly TAG: string = "CADT";
+  static readonly REPLY_TO: string = "XFORMS";
+  static readonly TAG: string = "XFORMS";
   public organization: string = null;
 
   constructor(private eventService: KafkaEventService) {

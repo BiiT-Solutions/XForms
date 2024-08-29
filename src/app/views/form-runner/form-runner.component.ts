@@ -5,6 +5,9 @@ import {Form, FormResult} from "x-forms-lib";
 import {BiitProgressBarType} from "biit-ui/info";
 import {Environment} from "../../../environments/environment";
 import {WebFormsService} from "../../services/web-forms.service";
+import {EventService} from "../../services/events/event-service";
+import {Subject} from "../../services/events/subject";
+import {Constants} from "../../shared/constants";
 
 @Component({
   selector: 'app-form-runner',
@@ -14,6 +17,7 @@ import {WebFormsService} from "../../services/web-forms.service";
 export class FormRunnerComponent implements OnInit, AfterViewInit {
 
   constructor(private http: HttpClient,
+              private eventService: EventService,
               private webFormsService: WebFormsService,
               private route: ActivatedRoute ) { }
 
@@ -91,13 +95,13 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   }
   onCompleted(formResult: FormResult) {
     if (!this.preview) {
-      this.http.post(Environment.KAFKA_PROXY_URL + Environment.FORM_PATH, formResult).subscribe({
+      this.eventService.sendEvent(formResult, Form.name, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM).subscribe( {
         next: (): void => {
           this.submitted = true;
         }, error: (): void => {
           console.error('Error sending form to Kafka, check network tab');
         }
-      });
+      })
     }
   }
 }
