@@ -8,6 +8,7 @@ import {WebFormsService} from "../../services/web-forms.service";
 import {EventService} from "../../services/events/event-service";
 import {Subject} from "../../services/events/subject";
 import {Constants} from "../../shared/constants";
+import {SessionService} from "kafka-event-structure-lib";
 
 @Component({
   selector: 'app-form-runner',
@@ -19,6 +20,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   constructor(private http: HttpClient,
               private eventService: EventService,
               private webFormsService: WebFormsService,
+              private sessionService: SessionService,
               private route: ActivatedRoute ) { }
 
   protected form: Form | undefined;
@@ -100,6 +102,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
       this.eventService.sendEvent(formResult, Form.name, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM).subscribe( {
         next: (): void => {
           this.submitted = true;
+          this.sessionService.clearToken();
         }, error: (): void => {
           console.error('Error sending form to Kafka, check network tab');
         }, complete: (): void => {
