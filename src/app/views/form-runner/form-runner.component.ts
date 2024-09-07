@@ -23,6 +23,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
 
   protected form: Form | undefined;
   protected submitted: boolean = false;
+  protected submitting: boolean = false;
   protected loading: boolean = true;
   protected readonly BiitProgressBarType = BiitProgressBarType;
   protected preview: boolean = false;
@@ -95,11 +96,14 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   }
   onCompleted(formResult: FormResult) {
     if (!this.preview) {
+      this.submitting = true;
       this.eventService.sendEvent(formResult, Form.name, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM).subscribe( {
         next: (): void => {
           this.submitted = true;
         }, error: (): void => {
           console.error('Error sending form to Kafka, check network tab');
+        }, complete: (): void => {
+          this.submitting = false;
         }
       })
     }
