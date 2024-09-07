@@ -24,6 +24,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
               private route: ActivatedRoute ) { }
 
   protected form: Form | undefined;
+  private unprocessedForm: Form | undefined;
   protected submitted: boolean = false;
   protected submitting: boolean = false;
   protected loading: boolean = true;
@@ -56,6 +57,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         if (this.preview) {
           this.webFormsService.getForm(params['form'], params['version'], params['organization']).subscribe( {
             next: (form: Form): void => {
+              this.unprocessedForm = form;
               this.form = Form.import(form, this.getMapFromParams(params));
             },
             error: (): boolean => this.loading = false
@@ -66,6 +68,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
               this.webFormsService.getPublished(params['form'], params['version'], params['organization']).subscribe(
                 {
                   next: (form: Form): void => {
+                    this.unprocessedForm = form;
                     this.form = Form.import(form, this.getMapFromParams(params));
                   },
                   error: (): void => {
@@ -91,6 +94,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
     this.http.get(path)
       .subscribe({
         next: (form: any): void => {
+          this.unprocessedForm = form;
           this.form = Form.import(form, this.getMapFromParams(params));
         },
         error: (): boolean => this.loading = false
@@ -99,7 +103,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   onCompleted(formResult: FormResult) {
     if (!this.preview) {
       this.submitting = true;
-      this.eventService.sendEvent(formResult, Form.name, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM).subscribe( {
+      this.eventService.sendEvent(formResult, Form.name, this.unprocessedForm, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM).subscribe( {
         next: (): void => {
           this.submitted = true;
           this.sessionService.clearToken();

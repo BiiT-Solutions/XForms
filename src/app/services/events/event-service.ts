@@ -13,13 +13,14 @@ export class EventService {
   constructor(private eventService: KafkaEventService) {
   }
 
-  public sendEvent<T>(payload: T, entityType: string, subject: Subject, customProperties: Map<string, string>, topic: string = undefined,
+  public sendEvent<T>(payload: T, entityType: string, context: any, subject: Subject, customProperties: Map<string, string>, topic: string = undefined,
                       replyTo: string = EventService.REPLY_TO, tag: string = EventService.TAG): Observable<Event<T>> {
     const sessionId: string = sessionStorage.getItem(Constants.SESSION_STORAGE.SESSION);
     const event: Event<T> = new Event();
     event.subject = subject;
     event.sessionId = sessionId;
     event.payload = payload;
+    event.customPropertiesMap = new Map<string, string>([['context', JSON.stringify(context)]]);
     if (this.organization) {
       event.organization = this.organization;
     }
