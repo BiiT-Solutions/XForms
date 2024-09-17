@@ -2,11 +2,13 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute, Params} from "@angular/router";
 import {Form, FormResult} from "x-forms-lib";
-import {BiitProgressBarType, BiitSnackbarService} from "biit-ui/info";
-import {ErrorHandler} from "biit-ui/utils";
+import {BiitProgressBarType} from "biit-ui/info";
 import {Environment} from "../../../environments/environment";
 import {WebFormsService} from "../../services/web-forms.service";
-import {TranslocoService} from "@ngneat/transloco"
+import {EventService} from "../../services/events/event-service";
+import {Subject} from "../../services/events/subject";
+import {Constants} from "../../shared/constants";
+import {SessionService} from "kafka-event-structure-lib";
 
 @Component({
   selector: 'app-form-runner',
@@ -16,13 +18,15 @@ import {TranslocoService} from "@ngneat/transloco"
 export class FormRunnerComponent implements OnInit, AfterViewInit {
 
   constructor(private http: HttpClient,
+              private eventService: EventService,
               private webFormsService: WebFormsService,
-              private biitSnackbarService: BiitSnackbarService,
-              private translocoService: TranslocoService,
+              private sessionService: SessionService,
               private route: ActivatedRoute ) { }
 
   protected form: Form | undefined;
+  private unprocessedForm: Form | undefined;
   protected submitted: boolean = false;
+  protected submitting: boolean = false;
   protected loading: boolean = true;
   protected readonly BiitProgressBarType = BiitProgressBarType;
   protected preview: boolean = false;
@@ -53,6 +57,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         if (this.preview) {
           this.webFormsService.getForm(params['form'], params['version'], params['organization']).subscribe( {
             next: (form: Form): void => {
+              this.unprocessedForm = form;
               this.form = Form.import(form, this.getMapFromParams(params));
             },
             error: (): boolean => this.loading = false
@@ -63,6 +68,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
               this.webFormsService.getPublished(params['form'], params['version'], params['organization']).subscribe(
                 {
                   next: (form: Form): void => {
+                    this.unprocessedForm = form;
                     this.form = Form.import(form, this.getMapFromParams(params));
                   },
                   error: (): void => {
@@ -88,20 +94,25 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
     this.http.get(path)
       .subscribe({
         next: (form: any): void => {
+          this.unprocessedForm = form;
           this.form = Form.import(form, this.getMapFromParams(params));
         },
-        error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
+        error: (): boolean => this.loading = false
       });
   }
   onCompleted(formResult: FormResult) {
     if (!this.preview) {
-      this.http.post(Environment.KAFKA_PROXY_URL + Environment.FORM_PATH, formResult).subscribe({
+      this.submitting = true;
+      this.eventService.sendEvent(formResult, Form.name, this.unprocessedForm, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM).subscribe( {
         next: (): void => {
           this.submitted = true;
+          this.sessionService.clearToken();
         }, error: (): void => {
           console.error('Error sending form to Kafka, check network tab');
+        }, complete: (): void => {
+          this.submitting = false;
         }
-      });
+      })
     }
   }
 }

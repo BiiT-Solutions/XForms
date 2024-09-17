@@ -1,4 +1,17 @@
 <div *ngIf="form">
+  <div *ngIf="submitting" class="block-wall">
+    <div class="bgi-text">
+      <div class="logo">
+        <biit-icon name="biit_icon" style="display: block; width: 2.5rem;" />
+        <biit-icon name="biit_logo" style="display: block; width: 5rem;" />
+      </div>
+      <div style="gap: 2rem">
+        <h1>Please wait...</h1>
+        <h2>We're submitting your data and this could take a few seconds.</h2>
+        <biit-progress-bar [type]="BiitProgressBarType.INDETERMINATE"></biit-progress-bar>
+      </div>
+    </div>
+  </div>
   <biit-x-form [form]="form"
                [submitted]="submitted"
                (completed)="onCompleted($event)"
