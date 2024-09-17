@@ -2,9 +2,11 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute, Params} from "@angular/router";
 import {Form, FormResult} from "x-forms-lib";
-import {BiitProgressBarType} from "biit-ui/info";
+import {BiitProgressBarType, BiitSnackbarService} from "biit-ui/info";
+import {ErrorHandler} from "biit-ui/utils";
 import {Environment} from "../../../environments/environment";
 import {WebFormsService} from "../../services/web-forms.service";
+import {TranslocoService} from "@ngneat/transloco"
 
 @Component({
   selector: 'app-form-runner',
@@ -15,6 +17,8 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
 
   constructor(private http: HttpClient,
               private webFormsService: WebFormsService,
+              private biitSnackbarService: BiitSnackbarService,
+              private translocoService: TranslocoService,
               private route: ActivatedRoute ) { }
 
   protected form: Form | undefined;
@@ -86,7 +90,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         next: (form: any): void => {
           this.form = Form.import(form, this.getMapFromParams(params));
         },
-        error: (): boolean => this.loading = false
+        error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
       });
   }
   onCompleted(formResult: FormResult) {

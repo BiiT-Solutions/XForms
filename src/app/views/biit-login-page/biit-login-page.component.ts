@@ -10,6 +10,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {LoginRequest, User} from "authorization-services-lib";
 import {AuthService, SessionService} from "kafka-event-structure-lib";
 import {UserService} from "user-manager-structure-lib";
+import {ErrorHandler} from 'biit-ui/utils';
 
 @Component({
   selector: 'biit-login-page',
@@ -65,17 +66,9 @@ export class BiitLoginPageComponent implements OnInit {
         this.sessionService.setUser(user);
         this.router.navigate([Constants.PATHS.FORM_VIEW],
           {queryParams: this.activateRoute.snapshot.queryParams});
-        this.waiting = false;
       },
-      error: (response: HttpResponse<void>) => {
-        const error: string = response.status.toString();
-        // Transloco does not load translation files. We need to load it manually;
-        this.translocoService.selectTranslate(error, {},  {scope: 'login'}).subscribe(msg => {
-          this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 5);
-        });
-        this.waiting = false;
-      }
-    });
+      error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
+    }).add(() => this.waiting = false);
   }
 
   private canAccess(user: User): boolean {
@@ -111,11 +104,7 @@ export class BiitLoginPageComponent implements OnInit {
           this.biitSnackbarService.showNotification(msg, NotificationType.SUCCESS, null, 5);
         });
       },
-      error: () => {
-        this.translocoService.selectTranslate('error', {},  {scope: 'biit-ui/login'}).subscribe(msg => {
-          this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 5);
-        });
-      }
+      error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
     })
   }
 }
