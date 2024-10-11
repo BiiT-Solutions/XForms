@@ -5,4 +5,7 @@ export class Environment {
   public static readonly USER_MANAGER_URL: string = 'DOCKER:USER_MANAGER_URL';
   public static readonly WEB_FORMS_URL: string = 'DOCKER:WEBFORMS_URL';
   public static readonly WEB_FORMS_CREDENTIALS: string = 'DOCKER:WEBFORMS_USER:DOCKER:WEBFORMS_PASSWORD';
+
+  public static SIGNUP_ALLOW = 'DOCKER:SIGNUP_ALLOW';
+  public static SIGNUP_HIDE_PASSWORD = 'DOCKER:SIGNUP_HIDE_PASSWORD';
 }

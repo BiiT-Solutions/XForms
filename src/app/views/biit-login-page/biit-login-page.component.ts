@@ -11,6 +11,7 @@ import {LoginRequest, User} from "authorization-services-lib";
 import {AuthService, SessionService} from "kafka-event-structure-lib";
 import {UserService} from "user-manager-structure-lib";
 import {ErrorHandler} from 'biit-ui/utils';
+import {Environment} from "../../../environments/environment";
 
 @Component({
   selector: 'biit-login-page',
@@ -122,4 +123,6 @@ export class BiitLoginPageComponent implements OnInit {
       error: err => ErrorHandler.notify(err, this.translocoService, this.biitSnackbarService)
     });
   }
+
+  protected readonly Environment = Environment;
 }
