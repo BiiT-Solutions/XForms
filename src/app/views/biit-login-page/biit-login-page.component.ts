@@ -115,7 +115,7 @@ export class BiitLoginPageComponent implements OnInit {
     user.lastname = data.lastname;
     user.email = data.email;
     user.password = data.password;
-    this.userService.createPublic(user).subscribe({
+    this.userService.createPublic(user.name, user.lastname, `${user.name[0]}${user.lastname}${Math.trunc(Math.random() * 1000)}`, user.email, user.password).subscribe({
       next: response => {
         const login = new BiitLogin(response.username, user.password)
         this.login(login);
