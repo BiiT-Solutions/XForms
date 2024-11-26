@@ -15,12 +15,15 @@ export class Constants {
   public static readonly HEADERS = class {
     public static readonly AUTHORIZATION: string = 'Authorization';
     public static readonly AUTHORIZATION_RESPONSE: string = 'authorization';
+    public static readonly USER_AUTHORIZATION: string = 'crupier';
+    public static readonly PASS_AUTHORIZATION: string = 'PokerOfAces';
     public static readonly EXPIRES: string = 'expires';
 
   }
 
    public static readonly PATHS = class {
      public static readonly KAFKA_CONTEXT: string = 'kafka-proxy-backend';
+     public static readonly USER_MANAGER_SYSTEM: string = 'user-manager-system-backend';
      public static readonly ASSETS: string = './assets';
      public static readonly FORM_VIEW: string = '/';
      public static readonly ICONS: string = '/icons'

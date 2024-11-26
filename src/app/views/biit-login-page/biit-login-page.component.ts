@@ -9,9 +9,13 @@ import {completeIconSet} from "biit-icons-collection";
 import {ActivatedRoute, Router} from "@angular/router";
 import {LoginRequest, User} from "authorization-services-lib";
 import {AuthService, SessionService} from "kafka-event-structure-lib";
-import {UserService} from "user-manager-structure-lib";
+import {  AuthService as UserManagerAuthService,
+  SessionService as UserManagerSessionService,
+  UserService
+} from "user-manager-structure-lib";
 import {ErrorHandler} from 'biit-ui/utils';
 import {Environment} from "../../../environments/environment";
+import {forkJoin, Observable} from "rxjs";
 
 @Component({
   selector: 'biit-login-page',
@@ -30,6 +34,8 @@ export class BiitLoginPageComponent implements OnInit {
   protected readonly BiitProgressBarType = BiitProgressBarType;
   protected waiting: boolean = true;
   constructor(private authService: AuthService,
+              private userManagerLoginService: UserManagerAuthService,
+              private sessionServiceUserManager: UserManagerSessionService,
               private sessionService: SessionService,
               private userService: UserService,
               private biitSnackbarService: BiitSnackbarService,
@@ -51,22 +57,35 @@ export class BiitLoginPageComponent implements OnInit {
 
   login(login: BiitLogin): void {
     this.waiting = true;
-    this.authService.login(new LoginRequest(login.username, login.password)).subscribe({
-      next: (response: HttpResponse<User>) => {
-        const user: User = User.clone(response.body);
-        if (!this.canAccess(user)) {
+    const userManagerLogin: Observable<HttpResponse<User>> = this.userManagerLoginService.login(new LoginRequest(login.username, login.password));
+    const authLogin: Observable<HttpResponse<User>> = this.authService.login(new LoginRequest(login.username, login.password));
+    forkJoin([userManagerLogin, authLogin]).subscribe({
+      next: (responses: HttpResponse<User>[]) => {
+        responses.forEach((response, index) => {
+          const user: User = User.clone(response.body);
+          if (!this.canAccess(user)) {
+            this.waiting = false;
+            this.translocoService.selectTranslate('access_denied_permissions').subscribe(msg => {
+              this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 10);
+            });
+            return;
+          }
+          const token: string = response.headers.get(Constants.HEADERS.AUTHORIZATION_RESPONSE);
+          const expiration: number = +response.headers.get(Constants.HEADERS.EXPIRES);
+          switch (index) {
+            case 0:
+              this.sessionServiceUserManager.setToken(token, expiration, login.remember, true);
+              this.sessionServiceUserManager.setUser(user);
+              break;
+            case 1:
+              this.sessionService.setToken(token, expiration, login.remember, true);
+              this.sessionService.setUser(user);
+              break;
+          }
+          this.router.navigate([Constants.PATHS.FORM_VIEW],
+            {queryParams: this.activateRoute.snapshot.queryParams});
           this.waiting = false;
-          this.translocoService.selectTranslate('access_denied_permissions').subscribe(msg => {
-            this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 10);
-          });
-          return;
-        }
-        const token: string = response.headers.get(Constants.HEADERS.AUTHORIZATION_RESPONSE);
-        const expiration: number = +response.headers.get(Constants.HEADERS.EXPIRES);
-        this.sessionService.setToken(token, expiration, login.remember, true);
-        this.sessionService.setUser(user);
-        this.router.navigate([Constants.PATHS.FORM_VIEW],
-          {queryParams: this.activateRoute.snapshot.queryParams});
+        })
       },
       error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
     }).add(() => this.waiting = false);

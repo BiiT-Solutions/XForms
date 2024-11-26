@@ -3,12 +3,12 @@ import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute, Params} from "@angular/router";
 import {Form, FormResult} from "x-forms-lib";
 import {BiitProgressBarType} from "biit-ui/info";
-import {Environment} from "../../../environments/environment";
 import {WebFormsService} from "../../services/web-forms.service";
 import {EventService} from "../../services/events/event-service";
 import {Subject} from "../../services/events/subject";
 import {Constants} from "../../shared/constants";
 import {SessionService} from "kafka-event-structure-lib";
+import {OrganizationService} from "user-manager-structure-lib";
 
 @Component({
   selector: 'app-form-runner',
@@ -21,6 +21,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
               private eventService: EventService,
               private webFormsService: WebFormsService,
               private sessionService: SessionService,
+              private organizationService: OrganizationService,
               private route: ActivatedRoute ) { }
 
   protected form: Form | undefined;
@@ -35,6 +36,11 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
     this.route.data.subscribe((data) => {
       if (data['preview']) {
         this.preview = true;
+      }
+    });
+    this.organizationService.getAllByLoggedUser().subscribe(organizations => {
+      if (organizations && organizations.length) {
+        this.eventService.organization = organizations[0].id;
       }
     });
   }
@@ -103,7 +109,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   onCompleted(formResult: FormResult) {
     if (!this.preview) {
       this.submitting = true;
-      this.eventService.sendEvent(formResult, Form.name, this.unprocessedForm, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM).subscribe( {
+      this.eventService.sendEvent(formResult, Form.name, this.unprocessedForm, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM, EventService.REPLY_TO, this.form.label).subscribe( {
         next: (): void => {
           this.submitted = true;
           this.sessionService.clearToken();
