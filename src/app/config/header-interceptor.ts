@@ -3,26 +3,23 @@ import {Observable} from "rxjs";
 import {Constants} from "../shared/constants";
 import {Injectable} from "@angular/core";
 import {SessionService} from "kafka-event-structure-lib";
-import {SessionService as UserManagerSessionService} from "user-manager-structure-lib";
 
 @Injectable()
 export class HeaderInterceptor implements HttpInterceptor {
 
-  constructor(private kafkaSessionService: SessionService,
-              private userManagerSessionService: UserManagerSessionService) {
+  constructor(private kafkaSessionService: SessionService) {
 
   }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    // If the request already has an Authorization header, do not add one
+    if (req.headers.get(Constants.HEADERS.AUTHORIZATION)) {
+      return next.handle(req);
+    }
+
     const request: HttpRequest<any> = req.clone({
-      headers: req.headers.append(Constants.HEADERS.AUTHORIZATION, this.getAuthorizationHeader(req.url) ),
+      headers: req.headers.append(Constants.HEADERS.AUTHORIZATION,
+        'Bearer ' +  this.kafkaSessionService.getToken())
     });
     return next.handle(request);
-  }
-  getAuthorizationHeader(url: string): string {
-    if  (url.includes(Constants.PATHS.USER_MANAGER_SYSTEM)) {
-      return `Bearer ${this.userManagerSessionService.getToken()}`;
-    } else {
-      return `Bearer ${this.kafkaSessionService.getToken()}`;
-    }
   }
 }

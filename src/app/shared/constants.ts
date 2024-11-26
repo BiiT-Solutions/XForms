@@ -21,7 +21,6 @@ export class Constants {
 
    public static readonly PATHS = class {
      public static readonly KAFKA_CONTEXT: string = 'kafka-proxy-backend';
-     public static readonly USER_MANAGER_SYSTEM: string = 'user-manager-system-backend';
      public static readonly ASSETS: string = './assets';
      public static readonly FORM_VIEW: string = '/';
      public static readonly ICONS: string = '/icons'
