@@ -15,8 +15,6 @@ export class Constants {
   public static readonly HEADERS = class {
     public static readonly AUTHORIZATION: string = 'Authorization';
     public static readonly AUTHORIZATION_RESPONSE: string = 'authorization';
-    public static readonly USER_AUTHORIZATION: string = 'crupier';
-    public static readonly PASS_AUTHORIZATION: string = 'PokerOfAces';
     public static readonly EXPIRES: string = 'expires';
 
   }

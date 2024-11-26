@@ -19,13 +19,10 @@ export class HeaderInterceptor implements HttpInterceptor {
     return next.handle(request);
   }
   getAuthorizationHeader(url: string): string {
-    if (url.includes(Constants.PATHS.KAFKA_CONTEXT)) {
-      return `Bearer ${this.kafkaSessionService.getToken()}`;
-    }
-    else if  (url.includes(Constants.PATHS.USER_MANAGER_SYSTEM)) {
+    if  (url.includes(Constants.PATHS.USER_MANAGER_SYSTEM)) {
       return `Bearer ${this.userManagerSessionService.getToken()}`;
     } else {
-      return `Basic ${btoa(Constants.HEADERS.USER_AUTHORIZATION + ':' + Constants.HEADERS.PASS_AUTHORIZATION)}`;
+      return `Bearer ${this.kafkaSessionService.getToken()}`;
     }
   }
 }
