@@ -8,4 +8,5 @@ export class Environment {
 
   public static SIGNUP_ALLOW = 'DOCKER:SIGNUP_ALLOW';
   public static SIGNUP_HIDE_PASSWORD = 'DOCKER:SIGNUP_HIDE_PASSWORD';
+  public static SIGNUP_HIDE_TEAM = 'DOCKER:SIGNUP_HIDE_TEAM_ASSIGNMENT';
 }

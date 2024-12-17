@@ -9,13 +9,18 @@ import {completeIconSet} from "biit-icons-collection";
 import {ActivatedRoute, Router} from "@angular/router";
 import {LoginRequest, User} from "authorization-services-lib";
 import {AuthService, SessionService} from "kafka-event-structure-lib";
-import {  AuthService as UserManagerAuthService,
-  SessionService as UserManagerSessionService,
+import {
+  SignUpRequest as UserManagerSignUpRequest,
+  AuthService as UserManagerAuthService,
+  SessionService as UserManagerSessionService, Team, TeamService,
   UserService
 } from "user-manager-structure-lib";
 import {ErrorHandler} from 'biit-ui/utils';
 import {Environment} from "../../../environments/environment";
 import {forkJoin, Observable} from "rxjs";
+import {ItemMap} from "../../model/item-map";
+import {SignUpRequest} from "biit-ui/login/biit-login/models/sign-up-request";
+import {SignupRequestConverter} from "../../shared/signup-request-converter";
 
 @Component({
   selector: 'biit-login-page',
@@ -33,11 +38,14 @@ export class BiitLoginPageComponent implements OnInit {
 
   protected readonly BiitProgressBarType = BiitProgressBarType;
   protected waiting: boolean = true;
+  protected teams: ItemMap[] = [];
+
   constructor(private authService: AuthService,
               private userManagerLoginService: UserManagerAuthService,
               private sessionServiceUserManager: UserManagerSessionService,
               private sessionService: SessionService,
               private userService: UserService,
+              private teamService: TeamService,
               private biitSnackbarService: BiitSnackbarService,
               biitIconService: BiitIconService,
               private activateRoute: ActivatedRoute,
@@ -53,6 +61,9 @@ export class BiitLoginPageComponent implements OnInit {
     } else {
       this.waiting = false;
     }
+
+    this.loadTeams();
+
   }
 
   login(login: BiitLogin): void {
@@ -89,6 +100,21 @@ export class BiitLoginPageComponent implements OnInit {
       },
       error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
     }).add(() => this.waiting = false);
+  }
+
+  private loadTeams(): void {
+    debugger
+    this.activateRoute.queryParams.subscribe(params => {
+      const organization: string = params['organization'];
+      if (!Environment.SIGNUP_HIDE_TEAM && organization) {
+        this.teamService.getAllByOrganizationPublic(organization).subscribe({
+          next: (teams: string[]) => {
+            this.teams = teams.map(team => new ItemMap(team, team));
+          },
+          error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
+        });
+      }
+    });
   }
 
   private canAccess(user: User): boolean {
@@ -128,15 +154,10 @@ export class BiitLoginPageComponent implements OnInit {
     })
   }
 
-  onSignUp(data: {name: string, lastname: string, email: string, password: string}) {
-    const user = new User();
-    user.name = data.name;
-    user.lastname = data.lastname;
-    user.email = data.email;
-    user.password = data.password;
-    this.userService.createPublic(user.name, user.lastname, `${user.name[0]}${user.lastname}${Math.trunc(Math.random() * 1000)}`, user.email, user.password).subscribe({
+  onSignUp(data: SignUpRequest): void {;
+    this.userService.signup(SignupRequestConverter.convertSignUpRequest(data)).subscribe({
       next: response => {
-        const login = new BiitLogin(response.username, user.password)
+        const login = new BiitLogin(response.username, data.password)
         this.login(login);
       },
       error: err => ErrorHandler.notify(err, this.translocoService, this.biitSnackbarService)

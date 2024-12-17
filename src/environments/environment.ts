@@ -6,6 +6,8 @@ export class Environment {
   public static readonly WEB_FORMS_URL: string = 'https://m3sport.biit-solutions.com/webforms';
   public static readonly WEB_FORMS_CREDENTIALS: string = 'webservices@biit-solutions.com:asd123';
 
-  public static SIGNUP_ALLOW = false;
+  public static SIGNUP_ALLOW = true;
   public static SIGNUP_HIDE_PASSWORD = false;
+  public static SIGNUP_HIDE_TEAM = false;
+
 }
