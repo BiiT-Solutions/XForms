@@ -3,6 +3,7 @@
             (onLogin)="login($event)"
             (onResetPassword)="onResetPassword($event)"
             (onSignUp)="onSignUp($event)"
+            [teams]="teams"
             [allowSignUp]="!!Environment.SIGNUP_ALLOW"
             [signUpGeneratedPassword]="!!Environment.SIGNUP_HIDE_PASSWORD"
 />
