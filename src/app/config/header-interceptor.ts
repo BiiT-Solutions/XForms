@@ -13,6 +13,9 @@ export class HeaderInterceptor implements HttpInterceptor {
 
   }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    if (this.getAuthorizationHeader(req.url) === null) {
+      return next.handle(req);
+    }
     const request: HttpRequest<any> = req.clone({
       headers: req.headers.append(Constants.HEADERS.AUTHORIZATION, this.getAuthorizationHeader(req.url) ),
     });
@@ -21,8 +24,9 @@ export class HeaderInterceptor implements HttpInterceptor {
   getAuthorizationHeader(url: string): string {
     if  (url.includes(Constants.PATHS.USER_MANAGER_SYSTEM)) {
       return `Bearer ${this.userManagerSessionService.getToken()}`;
-    } else {
+    } else if(url.includes(Constants.PATHS.KAFKA_CONTEXT)) {
       return `Bearer ${this.kafkaSessionService.getToken()}`;
     }
+    return null;
   }
 }
