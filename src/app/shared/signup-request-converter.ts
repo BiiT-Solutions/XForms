@@ -4,7 +4,7 @@ import {SignUpRequest as UserManagerSignUpRequest,} from "user-manager-structure
 export class SignupRequestConverter {
   public static convertSignUpRequest(signUpRequest: SignUpRequest, username?: string): UserManagerSignUpRequest  {
     const userManagerSignUpRequest: UserManagerSignUpRequest = new UserManagerSignUpRequest();
-    userManagerSignUpRequest.username = `${signUpRequest.name[0]}${signUpRequest.lastname}${Math.trunc(Math.random() * 1000)}`.replace(/\s+/g, '');
+    userManagerSignUpRequest.username = `${signUpRequest.name[0]}${signUpRequest.lastname}${Math.trunc(Math.random() * 1000)}`.replace(/[^a-zA-Z0-9]/g, '_');
     userManagerSignUpRequest.email = signUpRequest.email;
     userManagerSignUpRequest.firstname = signUpRequest.name;
     userManagerSignUpRequest.lastname = signUpRequest.lastname;
