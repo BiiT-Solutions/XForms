@@ -8,6 +8,7 @@ export class Environment {
 
   public static SIGNUP_ALLOW = true;
   public static SIGNUP_HIDE_PASSWORD = false;
+  public static SIGNUP_HIDE_USERNAME = true;
   public static SIGNUP_HIDE_TEAM = false;
 
 }

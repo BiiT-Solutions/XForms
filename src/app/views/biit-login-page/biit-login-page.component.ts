@@ -10,9 +10,9 @@ import {ActivatedRoute, Params, Router} from "@angular/router";
 import {LoginRequest, User} from "authorization-services-lib";
 import {AuthService, SessionService} from "kafka-event-structure-lib";
 import {
-  SignUpRequest as UserManagerSignUpRequest,
   AuthService as UserManagerAuthService,
-  SessionService as UserManagerSessionService, Team, TeamService,
+  SessionService as UserManagerSessionService, SignupRequestConverter,
+  TeamService,
   UserService
 } from "user-manager-structure-lib";
 import {ErrorHandler} from 'biit-ui/utils';
@@ -20,7 +20,6 @@ import {Environment} from "../../../environments/environment";
 import {firstValueFrom, forkJoin, Observable} from "rxjs";
 import {ItemMap} from "../../model/item-map";
 import {SignUpRequest} from "biit-ui/login/biit-login/models/sign-up-request";
-import {SignupRequestConverter} from "../../shared/signup-request-converter";
 
 @Component({
   selector: 'biit-login-page',
@@ -29,7 +28,7 @@ import {SignupRequestConverter} from "../../shared/signup-request-converter";
   providers: [
     {
       provide: TRANSLOCO_SCOPE,
-      multi:true,
+      multi: true,
       useValue: {scope: 'login', alias: 'errors'}
     }
   ]
@@ -126,16 +125,16 @@ export class BiitLoginPageComponent implements OnInit {
 
   private managePathQueries(): void {
     this.activateRoute.queryParams.subscribe(params => {
-      const queryParams: {[key: string]: string} = {};
+      const queryParams: { [key: string]: string } = {};
       if (params[Constants.PATHS.QUERY.EXPIRED] !== undefined) {
-        this.translocoService.selectTranslate(Constants.PATHS.QUERY.EXPIRED, {},  {scope: 'login'}).subscribe(msg => {
+        this.translocoService.selectTranslate(Constants.PATHS.QUERY.EXPIRED, {}, {scope: 'login'}).subscribe(msg => {
           this.biitSnackbarService.showNotification(msg, NotificationType.INFO, null, 5);
         });
         queryParams[Constants.PATHS.QUERY.EXPIRED] = null;
       }
       if (params[Constants.PATHS.QUERY.LOGOUT] !== undefined) {
         this.sessionService.clearToken();
-        this.translocoService.selectTranslate(Constants.PATHS.QUERY.LOGOUT, {},  {scope: 'login'}).subscribe(msg => {
+        this.translocoService.selectTranslate(Constants.PATHS.QUERY.LOGOUT, {}, {scope: 'login'}).subscribe(msg => {
           this.biitSnackbarService.showNotification(msg, NotificationType.SUCCESS, null, 5);
         });
         queryParams[Constants.PATHS.QUERY.LOGOUT] = null;
@@ -147,7 +146,7 @@ export class BiitLoginPageComponent implements OnInit {
   protected onResetPassword(email: string) {
     this.userService.resetPassword(email).subscribe({
       next: () => {
-        this.translocoService.selectTranslate('success', {},  {scope: 'biit-ui/login'}).subscribe(msg => {
+        this.translocoService.selectTranslate('success', {}, {scope: 'biit-ui/login'}).subscribe(msg => {
           this.biitSnackbarService.showNotification(msg, NotificationType.SUCCESS, null, 5);
         });
       },
@@ -164,6 +163,10 @@ export class BiitLoginPageComponent implements OnInit {
       },
       error: err => ErrorHandler.notify(err, this.translocoService, this.biitSnackbarService)
     });
+  }
+
+  checkIfUserNameExists(username: string): Observable<void> {
+    return this.userService.checkUserName(username);
   }
 
   protected readonly Environment = Environment;
