@@ -9,15 +9,18 @@ import {completeIconSet} from "biit-icons-collection";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {LoginRequest, User} from "authorization-services-lib";
 import {AuthService, SessionService} from "kafka-event-structure-lib";
+import {BiitLoginServiceSupport} from "biit-ui/login/biit-login/models/biit-login-service-support";
 import {
   AuthService as UserManagerAuthService,
-  SessionService as UserManagerSessionService, SignupRequestConverter,
+  SessionService as UserManagerSessionService,
+  SignupRequestConverter,
   TeamService,
   UserService
 } from "user-manager-structure-lib";
 import {ErrorHandler} from 'biit-ui/utils';
 import {Environment} from "../../../environments/environment";
 import {firstValueFrom, forkJoin, Observable} from "rxjs";
+import {debounceTime} from "rxjs/operators";
 import {ItemMap} from "../../model/item-map";
 import {SignUpRequest} from "biit-ui/login/biit-login/models/sign-up-request";
 
@@ -33,7 +36,7 @@ import {SignUpRequest} from "biit-ui/login/biit-login/models/sign-up-request";
     }
   ]
 })
-export class BiitLoginPageComponent implements OnInit {
+export class BiitLoginPageComponent implements OnInit, BiitLoginServiceSupport {
 
   protected readonly BiitProgressBarType = BiitProgressBarType;
   protected waiting: boolean = true;
@@ -165,8 +168,13 @@ export class BiitLoginPageComponent implements OnInit {
     });
   }
 
-  checkIfUserNameExists(username: string): Observable<void> {
-    return this.userService.checkUserName(username);
+  checkUserName(username: string): Promise<boolean> {
+    return new Promise<boolean>((resolve, reject) => {
+      this.userService.checkUserName(username).subscribe({
+        next: () => resolve(false),
+        error: (error) => reject(error)
+      });
+    });
   }
 
   protected readonly Environment = Environment;
