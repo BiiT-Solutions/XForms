@@ -1,6 +1,6 @@
 {
   "name": "xforms",
-  "version": "1.0.9",
+  "version": "1.0.14",
   "scripts": {
     "ng": "ng",
     "start": "npm run prepare:translations && ng serve",
@@ -26,6 +26,7 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0",
+    "biit-ui": "latest",
     "x-forms-lib": "latest",
     "kafka-event-structure-lib": "latest",
     "user-manager-structure-lib": "latest",
