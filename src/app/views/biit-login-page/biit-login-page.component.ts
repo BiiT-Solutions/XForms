@@ -19,8 +19,7 @@ import {
 } from "user-manager-structure-lib";
 import {ErrorHandler} from 'biit-ui/utils';
 import {Environment} from "../../../environments/environment";
-import {firstValueFrom, forkJoin, Observable} from "rxjs";
-import {debounceTime} from "rxjs/operators";
+import {combineLatest, firstValueFrom} from "rxjs";
 import {ItemMap} from "../../model/item-map";
 import {SignUpRequest} from "biit-ui/login/biit-login/models/sign-up-request";
 
@@ -71,38 +70,45 @@ export class BiitLoginPageComponent implements OnInit, BiitLoginServiceSupport {
 
   login(login: BiitLogin): void {
     this.waiting = true;
-    const userManagerLogin: Observable<HttpResponse<User>> = this.userManagerLoginService.login(new LoginRequest(login.username, login.password));
-    const authLogin: Observable<HttpResponse<User>> = this.authService.login(new LoginRequest(login.username, login.password));
-    forkJoin([userManagerLogin, authLogin]).subscribe({
-      next: (responses: HttpResponse<User>[]) => {
-        responses.forEach((response, index) => {
-          const user: User = User.clone(response.body);
-          if (!this.canAccess(user)) {
-            this.waiting = false;
-            this.translocoService.selectTranslate('access_denied_permissions').subscribe(msg => {
-              this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 10);
-            });
-            return;
-          }
-          const token: string = response.headers.get(Constants.HEADERS.AUTHORIZATION_RESPONSE);
-          const expiration: number = +response.headers.get(Constants.HEADERS.EXPIRES);
-          switch (index) {
-            case 0:
-              this.sessionServiceUserManager.setToken(token, expiration, login.remember, true);
-              this.sessionServiceUserManager.setUser(user);
-              break;
-            case 1:
-              this.sessionService.setToken(token, expiration, login.remember, true);
-              this.sessionService.setUser(user);
-              break;
-          }
-          this.router.navigate([Constants.PATHS.FORM_VIEW],
-            {queryParams: this.activateRoute.snapshot.queryParams});
+
+    combineLatest(
+      [
+        this.userManagerLoginService.login(new LoginRequest(login.username, login.password)),
+        this.authService.login(new LoginRequest(login.username, login.password))
+      ]
+    ).subscribe({
+      next: ([userManagerResponse, authResponse]) => {
+        const user: User = User.clone(userManagerResponse.body);
+        if (!this.canAccess(user)) {
           this.waiting = false;
-        })
+          this.translocoService.selectTranslate('403', {}, {scope:'biit-ui/utils'}).subscribe(msg => {
+            this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 10);
+          });
+          return;
+        }
+
+        const userManagerToken: string = userManagerResponse.headers.get(Constants.HEADERS.AUTHORIZATION_RESPONSE);
+        const userManagerExpiration: number = +userManagerResponse.headers.get(Constants.HEADERS.EXPIRES);
+        this.sessionServiceUserManager.setToken(userManagerToken, userManagerExpiration, login.remember, true);
+        this.sessionServiceUserManager.setUser(user);
+
+        const authToken: string = authResponse.headers.get(Constants.HEADERS.AUTHORIZATION_RESPONSE);
+        const authExpiration: number = +authResponse.headers.get(Constants.HEADERS.EXPIRES);
+        this.sessionService.setToken(authToken, authExpiration, login.remember, true);
+        this.sessionService.setUser(user);
+
+        this.router.navigate([Constants.PATHS.FORM_VIEW],
+          {queryParams: this.activateRoute.snapshot.queryParams});
       },
-      error: error => ErrorHandler.notify(error, this.translocoService, this.biitSnackbarService)
-    }).add(() => this.waiting = false);
+      error: (response: HttpResponse<void>) => {
+        const error: string = response.status.toString();
+        this.translocoService.selectTranslate(error, {},  {scope: 'biit-ui/utils'}).subscribe(msg => {
+          this.biitSnackbarService.showNotification(msg, NotificationType.ERROR, null, 5);
+        });
+      }
+    }).add(() => {
+      this.waiting = false;
+    });
   }
 
   private async loadTeams(): Promise<void> {

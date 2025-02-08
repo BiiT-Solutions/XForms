@@ -61,7 +61,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
     this.route.queryParams.subscribe({
       next: (params: Params): void => {
         if (this.preview) {
-          this.webFormsService.getForm(params['form'], params['version'], params['organization']).subscribe( {
+          this.webFormsService.getForm(params['form'], params['version'], params['organizationId']).subscribe( {
             next: (form: Form): void => {
               this.unprocessedForm = form;
               this.form = Form.import(form, this.getMapFromParams(params));
@@ -70,8 +70,8 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
           })
         } else {
           if (params['form']) {
-            if (params['version'] && params['organization']) {
-              this.webFormsService.getPublished(params['form'], params['version'], params['organization']).subscribe(
+            if (params['version'] && params['organizationId']) {
+              this.webFormsService.getPublished(params['form'], params['version'], params['organizationId']).subscribe(
                 {
                   next: (form: Form): void => {
                     this.unprocessedForm = form;

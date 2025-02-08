@@ -10,14 +10,14 @@ import {Environment} from "../../environments/environment";
 export class WebFormsService {
 
   constructor(private http: HttpClient) { }
-  getForm(formName: string, version: string, organization: string): Observable<Form> {
+  getForm(formName: string, version: string, organization: number): Observable<Form> {
     return this.http.get<Form>(
       `${Environment.WEB_FORMS_URL}/rest/forms/${formName}/versions/${version}/organizations/${organization}`,
       {headers: {Authorization: `Basic ${btoa(Environment.WEB_FORMS_CREDENTIALS)}`}}
     );
   }
 
-  getPublished(formName: string, version: string, organization: string): Observable<Form> {
+  getPublished(formName: string, version: string, organization: number): Observable<Form> {
     return this.http.get<Form>(
       `${Environment.WEB_FORMS_URL}/rest/published-forms/${formName}/versions/${version}/organizations/${organization}`,
       {headers: {Authorization: `Basic ${btoa(Environment.WEB_FORMS_CREDENTIALS)}`}}
