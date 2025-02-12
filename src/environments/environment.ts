@@ -10,5 +10,6 @@ export class Environment {
   public static SIGNUP_HIDE_PASSWORD = false;
   public static SIGNUP_HIDE_USERNAME = false;
   public static SIGNUP_HIDE_TEAM = false;
-
+  public static readonly LOGIN_NOTIFICATION_TITLE: string;
+  public static readonly LOGIN_NOTIFICATION: string;
 }
