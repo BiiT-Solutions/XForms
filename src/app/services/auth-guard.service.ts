@@ -26,16 +26,18 @@ export class AuthGuardService {
               private sessionService: SessionService) { }
 
   async canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<boolean> {
+    const queryParams: {[key: string]: string} = copy(route.queryParams);
+
     if (!this.sessionService.isTokenExpired()) {
+      // We indicate token has expired
+      queryParams[Constants.PATHS.QUERY.EXPIRED] = "";
       return true;
     }
-    const queryParams: {[key: string]: string} = copy(route.queryParams);
 
     if (route.queryParams[Constants.PATHS.QUERY.TEMPORAL_TOKEN] !== undefined) {
       try {
         await this.login(route.queryParams[Constants.PATHS.QUERY.TEMPORAL_TOKEN]);
-        // We indicate token has expired
-        queryParams[Constants.PATHS.QUERY.EXPIRED] = "";
+        return true;
       } catch (error) {
         console.error('Error logging in');
         queryParams[Constants.PATHS.QUERY.TOKEN_NOT_VALID] = "";
