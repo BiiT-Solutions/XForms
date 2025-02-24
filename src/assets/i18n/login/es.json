@@ -1,0 +1,11 @@
+{
+  "400": "Oh! Parece que esta página y su servidor no están en sincronía!. Por favor, pruebe a refrescar la página y limpiar la cache.",
+  "401": "Ups! Parece que su usuario y contraseña no son correctos. Por favor, compruébelo e inténtelo de nuevo.",
+  "403": "Ei! Parece que no tiene permisos para acceder a esta página. Por favor, contacte a su administrador si crees que esto se debe a un error.",
+  "404": "Lo sentimos, pero parece que nuestros servicios no se encuentran disponibles en este momento. Pruebe de nuevo más tarde.",
+  "423": "Ha alcanzado el número máximo de intentos. Por favor, pruebe de nuevo más tarde.",
+  "500": "Lo lamentamos, pero parece que existe algún problema con nuestros servicios. Inténtalo de nuevo más tarde.",
+  "expired": "Su sesión ha caducado.",
+  "logout": "Su sessión se ha cerrado correctamente.",
+  "token-not-valid": "El token no es válido."
+}

@@ -13,13 +13,14 @@ export class HeaderInterceptor implements HttpInterceptor {
 
   }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    if (this.getAuthorizationHeader(req.url) === null) {
+    if (this.getAuthorizationHeader(req.url)) {
+      const request: HttpRequest<any> = req.clone({
+        headers: req.headers.append(Constants.HEADERS.AUTHORIZATION, this.getAuthorizationHeader(req.url) ),
+      });
+      return next.handle(request);
+    } else {
       return next.handle(req);
     }
-    const request: HttpRequest<any> = req.clone({
-      headers: req.headers.append(Constants.HEADERS.AUTHORIZATION, this.getAuthorizationHeader(req.url) ),
-    });
-    return next.handle(request);
   }
   getAuthorizationHeader(url: string): string {
     if  (url.includes(Constants.PATHS.USER_MANAGER_SYSTEM)) {

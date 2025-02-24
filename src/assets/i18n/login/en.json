@@ -1,0 +1,11 @@
+{
+  "400": "Oops! It looks this app and our server are not on sync!. Please try to refresh the page and clear cache.",
+  "401": "Oops! It looks like your username or password is incorrect. Please try again.",
+  "403": "Ei! You don't have permission to access this page. Please contact your admin if you think this is an error.",
+  "404": "We are sorry, but it looks our services are not online currently. Please try again later.",
+  "423": "You have reached the maximum number of login attempts. Please try again later.",
+  "500": "We apologize, but it looks something is wrong with our services. Please try again later.",
+  "expired": "Your session has expired.",
+  "logout": "Your account was logged out successfully.",
+  "token-not-valid": "The token is not valid."
+}

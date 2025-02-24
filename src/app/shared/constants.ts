@@ -26,6 +26,8 @@ export class Constants {
      public static readonly FORM_VIEW: string = '/';
      public static readonly ICONS: string = '/icons'
      public static readonly QUERY = class {
+       public static readonly TOKEN_NOT_VALID: string = 'token-not-valid';
+       public static readonly TEMPORAL_TOKEN: string = 'temporal-token';
        public static readonly EXPIRED: string = 'expired';
        public static readonly LOGOUT: string = 'logout';
      }

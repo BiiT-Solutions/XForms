@@ -141,6 +141,14 @@ export class BiitLoginPageComponent implements OnInit, BiitLoginServiceSupport {
         });
         queryParams[Constants.PATHS.QUERY.EXPIRED] = null;
       }
+
+      if (params[Constants.PATHS.QUERY.TOKEN_NOT_VALID] !== undefined) {
+        this.translocoService.selectTranslate(Constants.PATHS.QUERY.TOKEN_NOT_VALID, {}, {scope: 'login'}).subscribe(msg => {
+          this.biitSnackbarService.showNotification(msg, NotificationType.INFO, null, 5);
+        });
+        queryParams[Constants.PATHS.QUERY.TOKEN_NOT_VALID] = null;
+      }
+
       if (params[Constants.PATHS.QUERY.LOGOUT] !== undefined) {
         this.sessionService.clearToken();
         this.translocoService.selectTranslate(Constants.PATHS.QUERY.LOGOUT, {}, {scope: 'login'}).subscribe(msg => {
