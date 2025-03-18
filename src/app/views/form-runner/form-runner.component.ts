@@ -77,6 +77,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
                   next: (form: Form): void => {
                     this.unprocessedForm = form;
                     this.form = Form.import(form, this.getMapFromParams(params));
+                    console.info('Form loaded from remote webforms server.');
                   },
                   error: (): void => {
                     console.error('Form was not found on remote service. We are trying to check the deployed ones.');
@@ -105,6 +106,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         next: (form: any): void => {
           this.unprocessedForm = form;
           this.form = Form.import(form, this.getMapFromParams(params));
+          console.info('Form loaded from local assets.');
         },
         error: (): boolean => this.loading = false
       });
