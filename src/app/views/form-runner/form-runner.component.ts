@@ -22,14 +22,15 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
               private webFormsService: WebFormsService,
               private sessionService: SessionService,
               private organizationService: OrganizationService,
-              private route: ActivatedRoute ) { }
+              private route: ActivatedRoute) {
+  }
 
   protected form: Form | undefined;
   private unprocessedForm: Form | undefined;
   protected submitted: boolean = false;
   protected submitting: boolean = false;
   protected loading: boolean = true;
-  protected readonly BiitProgressBarType = BiitProgressBarType;
+  protected readonly biitProgressBarType = BiitProgressBarType;
   protected preview: boolean = false;
 
   ngOnInit(): void {
@@ -61,7 +62,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
     this.route.queryParams.subscribe({
       next: (params: Params): void => {
         if (this.preview) {
-          this.webFormsService.getForm(params['form'], params['version'], params['organizationId']).subscribe( {
+          this.webFormsService.getForm(params['form'], params['version'], params['organizationId']).subscribe({
             next: (form: Form): void => {
               this.unprocessedForm = form;
               this.form = Form.import(form, this.getMapFromParams(params));
@@ -79,12 +80,12 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
                   },
                   error: (): void => {
                     console.error('Form was not found on remote service. We are trying to check the deployed ones.');
-                    this.loadLocal(params['form'], params);
+                    this.loadLocal(params['form'], params, params['version'], params['organizationId']);
                   }
                 }
               )
             } else {
-              this.loadLocal(params['form'], params);
+              this.loadLocal(params['form'], params, params['version'], params['organizationId']);
             }
           } else {
             this.loading = false
@@ -95,8 +96,10 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
     })
   }
 
-  loadLocal(form: string, params: Params) {
-    const path: string = `assets/forms/${form}.json`
+  loadLocal(form: string, params: Params, version?: string, organization?: string) {
+    const organizationPrefix: string = organization ? "_org" + organization : "";
+    const versionPrefix: string = version ? "_v" + version : "";
+    const path: string = `assets/forms/${form}${versionPrefix}${organizationPrefix}.json`
     this.http.get(path)
       .subscribe({
         next: (form: any): void => {
@@ -106,10 +109,11 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         error: (): boolean => this.loading = false
       });
   }
+
   onCompleted(formResult: FormResult) {
     if (!this.preview) {
       this.submitting = true;
-      this.eventService.sendEvent(formResult, Form.name, this.unprocessedForm, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM, EventService.REPLY_TO, this.form.label).subscribe( {
+      this.eventService.sendEvent(formResult, Form.name, this.unprocessedForm, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM, EventService.REPLY_TO, this.form.label).subscribe({
         next: (): void => {
           this.submitted = true;
           this.sessionService.clearToken();

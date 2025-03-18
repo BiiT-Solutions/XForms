@@ -8,7 +8,7 @@
       <div style="gap: 2rem">
         <h1>Please wait...</h1>
         <h2>We're submitting your data and this could take a few seconds.</h2>
-        <biit-progress-bar [type]="BiitProgressBarType.INDETERMINATE"></biit-progress-bar>
+        <biit-progress-bar [type]="biitProgressBarType.INDETERMINATE"></biit-progress-bar>
       </div>
     </div>
   </div>
@@ -28,7 +28,7 @@
     <div *ngIf="loading" style="gap: 2rem">
       <h1>Please wait...</h1>
       <h2>We're fetching your data and this could take a few seconds.</h2>
-      <biit-progress-bar [type]="BiitProgressBarType.INDETERMINATE"></biit-progress-bar>
+      <biit-progress-bar [type]="biitProgressBarType.INDETERMINATE"></biit-progress-bar>
     </div>
     <div *ngIf="!loading" style="gap: 2rem">
       <h1>Error retrieving data</h1>
