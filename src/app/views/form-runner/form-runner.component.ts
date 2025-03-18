@@ -106,7 +106,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         next: (form: any): void => {
           this.unprocessedForm = form;
           this.form = Form.import(form, this.getMapFromParams(params));
-          console.debug('Form loaded from local assets.');
+          console.debug(`Form ${form}${versionPrefix}${organizationPrefix}.json loaded from local assets.`);
         },
         error: (): boolean => this.loading = false
       });
