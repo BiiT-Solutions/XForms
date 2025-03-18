@@ -108,7 +108,13 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
           this.form = Form.import(form, this.getMapFromParams(params));
           console.debug(`Form ${form}${versionPrefix}${organizationPrefix}.json loaded from local assets.`);
         },
-        error: (): boolean => this.loading = false
+        error: (): void => {
+          this.loading = false
+          console.error(`Form ${form}${versionPrefix}${organizationPrefix}.json not found! Nothing to load.`);
+          if (version && organization) {
+            this.loadLocal(form, params);
+          }
+        }
       });
   }
 
