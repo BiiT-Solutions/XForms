@@ -57,7 +57,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "You are far from home.",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45703,
@@ -71,7 +71,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "5",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45704,
@@ -85,7 +85,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "10",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45705,
@@ -99,7 +99,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "15",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45706,
@@ -113,7 +113,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "20",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45707,
@@ -127,7 +127,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "25",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45708,
@@ -141,7 +141,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "30",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45709,
@@ -155,7 +155,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "35",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45710,
@@ -169,7 +169,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "40",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45711,
@@ -183,7 +183,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "45",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45712,
@@ -197,7 +197,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "50",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45713,
@@ -211,7 +211,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "55",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45714,
@@ -225,7 +225,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "60",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45715,
@@ -239,7 +239,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "65",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45716,
@@ -253,7 +253,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "70",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45717,
@@ -267,7 +267,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "75",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45718,
@@ -281,7 +281,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "80",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45719,
@@ -295,7 +295,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "85",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45720,
@@ -309,7 +309,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "90",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45721,
@@ -323,7 +323,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "95",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         }, {
           "class" : "com.biit.webforms.persistence.entity.Answer",
           "id" : 45722,
@@ -337,7 +337,7 @@
           "hidden" : false,
           "children" : [ ],
           "description" : "100",
-          "description_always_visible" : false
+          "answerDescriptionAlwaysVisible" : false
         } ],
         "abbreviation" : "",
         "alias" : "",
@@ -345,7 +345,8 @@
         "mandatory" : true,
         "consecutiveAnswers" : false,
         "horizontal" : false,
-        "description_always_visible" : true,
+        "answerDescriptionAlwaysVisible" : true,
+        "answersValuesOnTooltip": false,
         "description" : "",
         "defaultValueString" : null
       } ],
@@ -362,373 +363,5 @@
   "status" : "DESIGN",
   "linkedFormLabel" : null,
   "linkedFormVersions" : [ ],
-  "elementsToHide" : [ ],
-  "form" : {
-    "class" : "com.biit.webforms.persistence.entity.Form",
-    "id" : 7482,
-    "comparationId" : "87578dc3-00f9-4beb-9125-2a1d05af426e",
-    "creationTime" : "20-02-2018 11:10:06",
-    "updateTime" : "25-07-2024 17:45:05",
-    "createdBy" : 25001,
-    "updatedBy" : 10436,
-    "name" : "form",
-    "label" : "Test Form",
-    "originalReference" : "87578dc3-00f9-4beb-9125-2a1d05af426e",
-    "hidden" : false,
-    "children" : [ {
-      "class" : "com.biit.webforms.persistence.entity.Category",
-      "id" : 45586,
-      "comparationId" : "ca9f13e2-18dd-43a6-b069-f29adfc783fb",
-      "creationTime" : "24-06-2024 10:17:16",
-      "updateTime" : "25-07-2024 17:44:46",
-      "createdBy" : 10436,
-      "updatedBy" : 10436,
-      "name" : "category",
-      "label" : "category",
-      "originalReference" : "ca9f13e2-18dd-43a6-b069-f29adfc783fb",
-      "hidden" : false,
-      "children" : [ {
-        "class" : "com.biit.webforms.persistence.entity.Group",
-        "id" : 45587,
-        "comparationId" : "31d2a31b-c29b-4da1-9ae6-1d5cec0861f6",
-        "creationTime" : "24-06-2024 10:17:19",
-        "updateTime" : "25-07-2024 17:44:46",
-        "createdBy" : 10436,
-        "updatedBy" : 10436,
-        "name" : "group",
-        "label" : "group",
-        "originalReference" : "31d2a31b-c29b-4da1-9ae6-1d5cec0861f6",
-        "hidden" : false,
-        "children" : [ {
-          "class" : "com.biit.webforms.persistence.entity.Question",
-          "id" : 45701,
-          "comparationId" : "d6d56ccd-c014-4bd8-b8ee-e4c932ba5689",
-          "creationTime" : "25-07-2024 16:01:09",
-          "updateTime" : "25-07-2024 17:44:46",
-          "createdBy" : 10436,
-          "updatedBy" : 10436,
-          "name" : "question2",
-          "label" : "question2",
-          "originalReference" : "d6d56ccd-c014-4bd8-b8ee-e4c932ba5689",
-          "hidden" : false,
-          "children" : [ {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45702,
-            "comparationId" : "c45867f5-2de6-41ec-b371-09047f224b52",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:50:54",
-            "updatedBy" : 10436,
-            "name" : "0",
-            "label" : "Not very far",
-            "originalReference" : "c45867f5-2de6-41ec-b371-09047f224b52",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "You are far from home.",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45703,
-            "comparationId" : "8bbe3708-80f0-4a79-994a-6d5dda3ece8a",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:10",
-            "updatedBy" : 10436,
-            "name" : "5",
-            "label" : "",
-            "originalReference" : "8bbe3708-80f0-4a79-994a-6d5dda3ece8a",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "5",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45704,
-            "comparationId" : "e961b78d-25ec-449d-aaaf-0a6f9892d299",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:11",
-            "updatedBy" : 10436,
-            "name" : "10",
-            "label" : "",
-            "originalReference" : "e961b78d-25ec-449d-aaaf-0a6f9892d299",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "10",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45705,
-            "comparationId" : "03fa3ccd-7b59-4d77-ac76-41b051b57a3e",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:12",
-            "updatedBy" : 10436,
-            "name" : "15",
-            "label" : "",
-            "originalReference" : "03fa3ccd-7b59-4d77-ac76-41b051b57a3e",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "15",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45706,
-            "comparationId" : "24f88c69-da76-4396-9629-9c9c7efe5e5f",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:13",
-            "updatedBy" : 10436,
-            "name" : "20",
-            "label" : "",
-            "originalReference" : "24f88c69-da76-4396-9629-9c9c7efe5e5f",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "20",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45707,
-            "comparationId" : "2d6ec2ec-90d4-419a-9515-59d045f126d6",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:13",
-            "updatedBy" : 10436,
-            "name" : "25",
-            "label" : "Being defined",
-            "originalReference" : "2d6ec2ec-90d4-419a-9515-59d045f126d6",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "25",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45708,
-            "comparationId" : "4a4f566d-dda0-41d6-8dd2-bc13468760f7",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:17",
-            "updatedBy" : 10436,
-            "name" : "30",
-            "label" : "",
-            "originalReference" : "4a4f566d-dda0-41d6-8dd2-bc13468760f7",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "30",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45709,
-            "comparationId" : "bf47509a-da0c-4221-95ee-ff19182f6137",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:41:18",
-            "updatedBy" : 10436,
-            "name" : "35",
-            "label" : "",
-            "originalReference" : "bf47509a-da0c-4221-95ee-ff19182f6137",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "35",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45710,
-            "comparationId" : "34e8afbd-7d51-40f9-8f91-b363aedbb276",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:42:06",
-            "updatedBy" : 10436,
-            "name" : "40",
-            "label" : "",
-            "originalReference" : "34e8afbd-7d51-40f9-8f91-b363aedbb276",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "40",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45711,
-            "comparationId" : "6c42da15-6483-48bb-990e-52ba25b4c6da",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:15",
-            "updatedBy" : 10436,
-            "name" : "45",
-            "label" : "",
-            "originalReference" : "6c42da15-6483-48bb-990e-52ba25b4c6da",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "45",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45712,
-            "comparationId" : "fa97bee0-5be6-4085-8984-03fab5e5673c",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:38:59",
-            "updatedBy" : 10436,
-            "name" : "50",
-            "label" : "Implemented",
-            "originalReference" : "fa97bee0-5be6-4085-8984-03fab5e5673c",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "50",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45713,
-            "comparationId" : "10371fae-7663-4434-a2b9-ad5eeeba89d3",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:18",
-            "updatedBy" : 10436,
-            "name" : "55",
-            "label" : "",
-            "originalReference" : "10371fae-7663-4434-a2b9-ad5eeeba89d3",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "55",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45714,
-            "comparationId" : "b5caf69e-6bfe-4771-9f48-b503e626f8b9",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:41:15",
-            "updatedBy" : 10436,
-            "name" : "60",
-            "label" : "",
-            "originalReference" : "b5caf69e-6bfe-4771-9f48-b503e626f8b9",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "60",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45715,
-            "comparationId" : "14c0e132-24f9-49ff-bedb-538d9b901767",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:19",
-            "updatedBy" : 10436,
-            "name" : "65",
-            "label" : "",
-            "originalReference" : "14c0e132-24f9-49ff-bedb-538d9b901767",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "65",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45716,
-            "comparationId" : "f38aec2e-06c7-4f80-8798-d2c0266c4117",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:20",
-            "updatedBy" : 10436,
-            "name" : "70",
-            "label" : "",
-            "originalReference" : "f38aec2e-06c7-4f80-8798-d2c0266c4117",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "70",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45717,
-            "comparationId" : "4af189c2-0398-4279-9113-6e737e8d3892",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:39:00",
-            "updatedBy" : 10436,
-            "name" : "75",
-            "label" : "Integrated",
-            "originalReference" : "4af189c2-0398-4279-9113-6e737e8d3892",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "75",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45718,
-            "comparationId" : "ec85ef67-fd70-414c-9360-9a0207f058aa",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:20",
-            "updatedBy" : 10436,
-            "name" : "80",
-            "label" : "",
-            "originalReference" : "ec85ef67-fd70-414c-9360-9a0207f058aa",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "80",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45719,
-            "comparationId" : "20535e3e-0731-40bb-8322-f96273e2b24c",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:50:54",
-            "updatedBy" : 10436,
-            "name" : "85",
-            "label" : "",
-            "originalReference" : "20535e3e-0731-40bb-8322-f96273e2b24c",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "85",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45720,
-            "comparationId" : "d48f00f5-703c-4df8-9319-701db2e3cb8e",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 17:11:08",
-            "updatedBy" : 10436,
-            "name" : "90",
-            "label" : "",
-            "originalReference" : "d48f00f5-703c-4df8-9319-701db2e3cb8e",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "90",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45721,
-            "comparationId" : "d0938a95-dfc3-4cbe-aa9c-57aca3052443",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:40:24",
-            "updatedBy" : 10436,
-            "name" : "95",
-            "label" : "",
-            "originalReference" : "d0938a95-dfc3-4cbe-aa9c-57aca3052443",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "95",
-            "description_always_visible" : false
-          }, {
-            "class" : "com.biit.webforms.persistence.entity.Answer",
-            "id" : 45722,
-            "comparationId" : "18188e26-58ec-47a6-a328-145fb0dd4689",
-            "creationTime" : "25-07-2024 16:01:38",
-            "updateTime" : "25-07-2024 16:39:38",
-            "updatedBy" : 10436,
-            "name" : "100",
-            "label" : "Shophisticated",
-            "originalReference" : "18188e26-58ec-47a6-a328-145fb0dd4689",
-            "hidden" : false,
-            "children" : [ ],
-            "description" : "100",
-            "description_always_visible" : false
-          } ],
-          "abbreviation" : "",
-          "alias" : "",
-          "answerType" : "SINGLE_SELECTION_SLIDER",
-          "mandatory" : true,
-          "consecutiveAnswers" : false,
-          "horizontal" : false,
-          "description_always_visible" : true,
-          "description" : "",
-          "defaultValueString" : null
-        } ],
-        "repeatable" : false,
-        "isTable" : false,
-        "numberOfColumn" : 1
-      } ]
-    } ],
-    "version" : 1,
-    "organizationId" : 18903,
-    "description" : "",
-    "flows" : [ ],
-    "webserviceCalls" : [ ],
-    "status" : "DESIGN",
-    "linkedFormLabel" : null,
-    "linkedFormVersions" : [ ],
-    "elementsToHide" : [ ]
-  }
+  "elementsToHide" : [ ]
 }
