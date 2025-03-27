@@ -116,7 +116,7 @@ export class BiitLoginPageComponent implements OnInit, BiitLoginServiceSupport {
     const params: Params = await firstValueFrom(this.activateRoute.queryParams);
     this.organization = params['organization'];
 
-    if (!Environment.SIGNUP_HIDE_TEAM && this.organization) {
+    if (Environment.SIGNUP_ALLOW && !Environment.SIGNUP_HIDE_TEAM && this.organization) {
       this.teamService.getAllByOrganizationPublic(this.organization).subscribe({
         next: (teams: string[]) => {
           this.teams = teams.map(team => new ItemMap(team, team));
