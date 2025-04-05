@@ -2,13 +2,15 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute, Params} from "@angular/router";
 import {Form, FormResult} from "x-forms-lib";
-import {BiitProgressBarType} from "biit-ui/info";
+import {BiitProgressBarType, BiitSnackbarService} from "biit-ui/info";
 import {WebFormsService} from "../../services/web-forms.service";
 import {EventService} from "../../services/events/event-service";
 import {Subject} from "../../services/events/subject";
 import {Constants} from "../../shared/constants";
 import {SessionService} from "kafka-event-structure-lib";
 import {OrganizationService} from "user-manager-structure-lib";
+import {ErrorHandler} from "biit-ui/utils";
+import {TranslocoService} from "@ngneat/transloco";
 
 @Component({
   selector: 'app-form-runner',
@@ -22,6 +24,8 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
               private webFormsService: WebFormsService,
               private sessionService: SessionService,
               private organizationService: OrganizationService,
+              private snackbarService: BiitSnackbarService,
+              private transloco: TranslocoService,
               private route: ActivatedRoute) {
   }
 
@@ -125,8 +129,10 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         next: (): void => {
           this.submitted = true;
           this.sessionService.clearToken();
-        }, error: (): void => {
+        }, error: (err): void => {
           console.error('Error sending form to Kafka, check network tab');
+          ErrorHandler.notify(err, this.transloco, this.snackbarService);
+          this.submitting = false;
         }, complete: (): void => {
           this.submitting = false;
         }
