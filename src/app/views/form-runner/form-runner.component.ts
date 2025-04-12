@@ -10,12 +10,20 @@ import {Constants} from "../../shared/constants";
 import {SessionService} from "kafka-event-structure-lib";
 import {OrganizationService} from "user-manager-structure-lib";
 import {ErrorHandler} from "biit-ui/utils";
-import {TranslocoService} from "@ngneat/transloco";
+import {TranslocoService, TRANSLOCO_SCOPE} from "@ngneat/transloco";
 
 @Component({
   selector: 'app-form-runner',
   templateUrl: './form-runner.component.html',
-  styleUrls: ['./form-runner.component.scss']
+  styleUrls: ['./form-runner.component.scss'],
+  providers: [
+    {
+      provide: TRANSLOCO_SCOPE,
+      multi: true,
+      useValue: {scope: 'form', alias: 'form'}
+    }
+  ]
+
 })
 export class FormRunnerComponent implements OnInit, AfterViewInit {
 
@@ -37,8 +45,11 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   protected readonly biitProgressBarType = BiitProgressBarType;
   protected preview: boolean = false;
 
+  protected preloadForm: boolean = false;
+  protected preloadedForm: Form;
+
   ngOnInit(): void {
-    this.route.data.subscribe((data) => {
+    this.route.data.subscribe((data): void => {
       if (data['preview']) {
         this.preview = true;
       }
@@ -62,6 +73,19 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    this.route.queryParams.subscribe((params): void => {
+      const formName: string = params['form'];
+      const form: Form = JSON.parse(sessionStorage.getItem(formName));
+      if (form) {
+        this.preloadForm = true;
+        this.preloadedForm = Form.import(form, this.getMapFromParams(params));
+      } else {
+        this.loadForm();
+      }
+    });
+  }
+
+  private loadForm(): void {
     this.loading = true;
     this.route.queryParams.subscribe({
       next: (params: Params): void => {
@@ -98,10 +122,10 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         }
       },
       error: (): boolean => this.loading = false
-    })
+    });
   }
 
-  loadLocal(form: string, params: Params, version?: string, organization?: string) {
+  loadLocal(form: string, params: Params, version?: string, organization?: string): void {
     const organizationPrefix: string = organization ? "_org" + organization : "";
     const versionPrefix: string = version ? "_v" + version : "";
     const path: string = `assets/forms/${form}${versionPrefix}${organizationPrefix}.json`
@@ -122,21 +146,51 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
       });
   }
 
-  onCompleted(formResult: FormResult) {
+  onCompleted(formResult: FormResult): void {
     if (!this.preview) {
       this.submitting = true;
       this.eventService.sendEvent(formResult, Form.name, this.unprocessedForm, Subject.SUBMITTED, undefined, Constants.TOPICS.FORM, EventService.REPLY_TO, this.form.label).subscribe({
         next: (): void => {
           this.submitted = true;
           this.sessionService.clearToken();
+          if (this.getFormLocally(formResult.label)) {
+            this.deleteLocally(formResult.label);
+          }
         }, error: (err): void => {
           console.error('Error sending form to Kafka, check network tab');
           ErrorHandler.notify(err, this.transloco, this.snackbarService);
           this.submitting = false;
+          this.saveLocally(this.form);
         }, complete: (): void => {
           this.submitting = false;
         }
       })
     }
+  }
+
+  private saveLocally(form: Form): void {
+    sessionStorage.setItem(form.label, JSON.stringify(form));
+  }
+
+  private getFormLocally(formName: string): Form {
+    const form: Form = JSON.parse(sessionStorage.getItem(formName));
+    if (form) {
+      return form;
+    } else {
+      return null;
+    }
+  }
+  private deleteLocally(formName: string): void {
+    sessionStorage.removeItem(formName);
+  }
+  protected onLoadPreForm(): void {
+    this.preloadForm = false;
+    this.unprocessedForm = this.preloadedForm;
+    this.form = Form.clone(this.preloadedForm);
+  }
+  protected onRestart(): void {
+    this.loadForm();
+    this.preloadedForm = null;
+    this.preloadForm = false;
   }
 }
