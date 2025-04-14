@@ -1,0 +1,121 @@
+{
+  "class" : "com.biit.webforms.persistence.entity.CompleteFormView",
+  "id" : 1,
+  "comparationId" : "f1140f2f-ddc7-44f4-8100-9d90170a8eb0",
+  "creationTime" : "08-04-2025 14:06:40",
+  "updateTime" : "08-04-2025 14:06:40",
+  "name" : "form",
+  "label" : "TestFormLang",
+  "labelTranslations" : {
+    "NL" : "Testung Form",
+    "ES" : "Formulario de Test"
+  },
+  "originalReference" : "f1140f2f-ddc7-44f4-8100-9d90170a8eb0",
+  "hidden" : false,
+  "children" : [ {
+    "class" : "com.biit.webforms.persistence.entity.Category",
+    "comparationId" : "4a3b0406-db49-4ab3-b8d1-cd9ad58b05f0",
+    "creationTime" : "08-04-2025 14:01:08",
+    "updateTime" : "08-04-2025 14:03:49",
+    "createdBy" : 10436,
+    "updatedBy" : 10436,
+    "name" : "category",
+    "label" : "category",
+    "labelTranslations" : {
+      "NL" : "Categochung",
+      "ES" : "Categoria"
+    },
+    "originalReference" : "4a3b0406-db49-4ab3-b8d1-cd9ad58b05f0",
+    "hidden" : false,
+    "children" : [ {
+      "class" : "com.biit.webforms.persistence.entity.Group",
+      "comparationId" : "7d407c89-2290-4e44-8c02-e20a6a413f4a",
+      "creationTime" : "08-04-2025 14:02:38",
+      "updateTime" : "08-04-2025 14:03:49",
+      "createdBy" : 10436,
+      "updatedBy" : 10436,
+      "name" : "group",
+      "label" : "group",
+      "labelTranslations" : {
+        "NL" : "Goupchung",
+        "ES" : "Grupo"
+      },
+      "originalReference" : "7d407c89-2290-4e44-8c02-e20a6a413f4a",
+      "hidden" : false,
+      "children" : [ {
+        "class" : "com.biit.webforms.persistence.entity.Question",
+        "comparationId" : "e1161e1c-89bf-46bc-9f79-1cc746375d6d",
+        "creationTime" : "08-04-2025 14:02:55",
+        "updateTime" : "08-04-2025 14:03:49",
+        "createdBy" : 10436,
+        "updatedBy" : 10436,
+        "name" : "question",
+        "label" : "question",
+        "labelTranslations" : {
+          "NL" : "QuestionChung",
+          "ES" : "Pregunta"
+        },
+        "originalReference" : "e1161e1c-89bf-46bc-9f79-1cc746375d6d",
+        "hidden" : false,
+        "children" : [ {
+          "class" : "com.biit.webforms.persistence.entity.Answer",
+          "comparationId" : "04dad553-a754-4000-85c2-157731ac78b4",
+          "creationTime" : "08-04-2025 14:03:30",
+          "updateTime" : "08-04-2025 14:03:49",
+          "createdBy" : 10436,
+          "updatedBy" : 10436,
+          "name" : "answer",
+          "label" : "answer",
+          "labelTranslations" : {
+            "NL" : "Answerchung",
+            "ES" : "Respuesta"
+          },
+          "originalReference" : "04dad553-a754-4000-85c2-157731ac78b4",
+          "hidden" : false,
+          "children" : [ ],
+          "description" : "",
+          "descriptionTranslations" : {
+            "NL" : "Answerchung Description",
+            "ES" : "Descripción de Respuesta"
+          }
+        } ],
+        "abbreviation" : "",
+        "alias" : "",
+        "answerType" : "SINGLE_SELECTION_RADIO",
+        "mandatory" : true,
+        "consecutiveAnswers" : false,
+        "horizontal" : false,
+        "inverseAnswerOrder" : false,
+        "descriptionAlwaysVisible" : false,
+        "answerDescriptionAlwaysVisible" : false,
+        "answersValuesOnTooltip" : false,
+        "description" : "",
+        "descriptionTranslations" : {
+          "NL" : "Questionchung description",
+          "ES" : "Descripción de pregunta"
+        },
+        "defaultValueString" : null
+      } ],
+      "repeatable" : false,
+      "isTable" : false,
+      "numberOfColumn" : 1
+    } ],
+    "descriptionTranslations" : {
+      "NL" : "Categochung Description",
+      "ES" : "Descripcion de Categoria"
+    }
+  } ],
+  "version" : 1,
+  "organizationId" : 18903,
+  "description" : "",
+  "flows" : [ ],
+  "webserviceCalls" : [ ],
+  "status" : "DESIGN",
+  "linkedFormLabel" : null,
+  "linkedFormVersions" : [ ],
+  "elementsToHide" : [ ],
+  "descriptionTranslations" : {
+    "NL" : "Testung Form Description",
+    "ES" : "Descripcion del formulario de test"
+  }
+}

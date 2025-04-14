@@ -5,6 +5,9 @@ import {FormRunnerRoutingModule} from "./form-runner-routing.module";
 import {FormModule} from "x-forms-lib";
 import {BiitIconModule} from "biit-ui/icon";
 import {BiitProgressBarModule} from "biit-ui/info";
+import {BiitPopupModule} from "biit-ui/popup";
+import {BiitButtonModule} from "biit-ui/button";
+import {TranslocoRootModule} from "biit-ui/i18n";
 
 
 
@@ -17,7 +20,10 @@ import {BiitProgressBarModule} from "biit-ui/info";
     FormRunnerRoutingModule,
     FormModule,
     BiitIconModule,
-    BiitProgressBarModule
+    BiitProgressBarModule,
+    BiitPopupModule,
+    BiitButtonModule,
+    TranslocoRootModule
   ]
 })
 export class FormRunnerModule { }

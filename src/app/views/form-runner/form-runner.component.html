@@ -1,4 +1,4 @@
-<div *ngIf="form">
+<div *ngIf="form && !preloadForm">
   <div *ngIf="submitting" class="block-wall">
     <div class="bgi-text">
       <div class="logo">
@@ -18,7 +18,8 @@
                (closed)="submitted = false"
   ></biit-x-form>
 </div>
-<div *ngIf="!form" class="empty-form">
+<div *ngIf="!form && !preloadForm" class="empty-form">
+
   <div class="bgi"></div>
   <div class="bgi-text">
     <div class="logo">
@@ -37,3 +38,19 @@
     </div>
   </div>
 </div>
+<biit-popup *ngIf="preloadForm"
+            title="Form saved"
+>
+  <div class="popup-content" >
+    <div> {{ 'form.form-saved' | transloco }}</div>
+    <div>{{ 'form.form-saved-confirmation' | transloco }}</div>
+    <div class="btn-container">
+      <button biit-button primary style="display: block" title="{{'form.load' | transloco }}" (click)="onLoadPreForm()">
+        {{'form.load' | transloco }}
+      </button>
+      <button biit-button secondary style="display: block" title="{{'form.start-over' | transloco }}" (click)="onRestart()">
+        {{'form.start-over' | transloco }}
+      </button>
+    </div>
+  </div>
+</biit-popup>
