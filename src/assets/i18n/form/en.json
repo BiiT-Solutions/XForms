@@ -2,5 +2,11 @@
   "form-saved": "You have already completed this form, but there was a problem submitting it.",
   "form-saved-confirmation":"Do you want to load the saved form or start over?",
   "load": "Load",
-  "start-over": "Start over"
+  "start-over": "Start over",
+  "please-wait": "Please wait",
+  "fetching-data": "We're fetching your data and this could take a few seconds",
+  "error-retrieving-data": "Error retrieving data",
+  "cannot-display-content": "Unfortunately, we cannot display the content of your request right now",
+  "if-error-persist-contact-support": "If the issue persists, please contact support to sort out",
+  "we-are-submitting": "We're submitting your data and this could take a few seconds"
 }

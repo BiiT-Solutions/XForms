@@ -2,5 +2,11 @@
   "form-saved": "Je hebt dit formulier al ingevuld, maar er was een probleem met het indienen.",
   "form-saved-confirmation":"Wil je het opgeslagen formulier laden of opnieuw beginnen?",
   "load": "Laden",
-  "start-over": "Opnieuw beginnen"
+  "start-over": "Opnieuw beginnen",
+  "please-wait": "Even geduld aub",
+  "fetching-data": "We halen je gegevens op en dit kan een paar seconden duren",
+  "error-retrieving-data": "Fout bij het ophalen van gegevens",
+  "cannot-display-content": "Helaas kunnen we de inhoud van je aanvraag op dit moment niet weergeven",
+  "if-error-persist-contact-support": "Als het probleem aanhoudt, neem dan contact op met de ondersteuning om het op te lossen",
+  "we-are-submitting": "We verzenden je gegevens en dit kan een paar seconden duren"
 }

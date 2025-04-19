@@ -6,8 +6,8 @@
         <biit-icon name="biit_logo" style="display: block; width: 5rem;" />
       </div>
       <div style="gap: 2rem">
-        <h1>Please wait...</h1>
-        <h2>We're submitting your data and this could take a few seconds.</h2>
+        <h1>{{ 'form.please-wait' | transloco }}...</h1>
+        <h2>{{ 'form.we-are-submitting' | transloco}}.</h2>
         <biit-progress-bar [type]="biitProgressBarType.INDETERMINATE"></biit-progress-bar>
       </div>
     </div>
@@ -27,19 +27,19 @@
       <biit-icon name="biit_logo" style="display: block; width: 5rem;" />
     </div>
     <div *ngIf="loading" style="gap: 2rem">
-      <h1>Please wait...</h1>
-      <h2>We're fetching your data and this could take a few seconds.</h2>
+      <h1>{{ 'form.please-wait' | transloco }}...</h1>
+      <h2>{{ 'form.fetching-data' | transloco }}.</h2>
       <biit-progress-bar [type]="biitProgressBarType.INDETERMINATE"></biit-progress-bar>
     </div>
     <div *ngIf="!loading" style="gap: 2rem">
-      <h1>Error retrieving data</h1>
-      <h2>Unfortunately, we can not display the content of your request, right now.</h2>
-      <p>If the issue persists, please contact support to sort out. </p>
+      <h1>{{ 'form.error-retrieving-data' | transloco }}</h1>
+      <h2>{{ 'form.cannot-display-content' | transloco}}.</h2>
+      <p>{{ 'form.if-error-persist-contact-support' | transloco}}. </p>
     </div>
   </div>
 </div>
 <biit-popup *ngIf="preloadForm"
-            title="Form saved"
+            title="{{ 'form.form-saved' | transloco }}"
 >
   <div class="popup-content" >
     <div> {{ 'form.form-saved' | transloco }}</div>
