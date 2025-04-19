@@ -9,7 +9,7 @@
     "test": "ng test",
     "prepare:docs": "cpx ./README.md ./dist/xforms && echo \"{\\\"name\\\": \\\"`node -e \"console.log(require('./package.json').name);\"\n`\\\", \\\"version\\\": \\\"`node -e \"console.log(require('./package.json').version);\"\n`\\\"}\" > ./dist/xforms/package.json",
     "prepare:publication": "npm run prepare:docs && npm run prepare:translations && npm run build",
-    "clean:translations": "del-cli --force ./src/assets/i18n/biit-ui/",
+    "clean:translations": "del-cli --force ./src/assets/i18n/biit-ui/ && del-cli --force ./src/assets/i18n/xforms/",
     "prepare:translations": "npm run clean:translations && cpx \"./node_modules/biit-ui/assets/i18n/**/*.json\" \"./src/assets/i18n/biit-ui/\" && cpx \"./node_modules/x-forms-lib/assets/i18n/**/*.json\" \"./src/assets/i18n/xforms/\"",
     "publish": "npm run prepare:publication && npm publish ./dist/xforms"
   },
