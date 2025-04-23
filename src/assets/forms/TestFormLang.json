@@ -1,22 +1,22 @@
 {
   "class" : "com.biit.webforms.persistence.entity.CompleteFormView",
-  "id" : 1,
-  "comparationId" : "f1140f2f-ddc7-44f4-8100-9d90170a8eb0",
-  "creationTime" : "08-04-2025 14:06:40",
-  "updateTime" : "08-04-2025 14:06:40",
+  "id" : 46846,
+  "comparationId" : "19207405-b106-4612-8036-ea691745530f",
+  "creationTime" : "23-04-2025 11:04:15",
+  "updateTime" : "23-04-2025 11:04:15",
   "name" : "form",
-  "label" : "TestFormLang",
+  "label" : "Localization",
   "labelTranslations" : {
     "NL" : "Testung Form",
     "ES" : "Formulario de Test"
   },
-  "originalReference" : "f1140f2f-ddc7-44f4-8100-9d90170a8eb0",
+  "originalReference" : "e8aad6f8-e55d-4954-ac94-e0cd404a9047",
   "hidden" : false,
   "children" : [ {
     "class" : "com.biit.webforms.persistence.entity.Category",
-    "comparationId" : "4a3b0406-db49-4ab3-b8d1-cd9ad58b05f0",
-    "creationTime" : "08-04-2025 14:01:08",
-    "updateTime" : "08-04-2025 14:03:49",
+    "comparationId" : "6e92fa26-e471-4530-9ca5-afeaa201ef92",
+    "creationTime" : "23-04-2025 11:03:11",
+    "updateTime" : "23-04-2025 11:04:11",
     "createdBy" : 10436,
     "updatedBy" : 10436,
     "name" : "category",
@@ -29,9 +29,9 @@
     "hidden" : false,
     "children" : [ {
       "class" : "com.biit.webforms.persistence.entity.Group",
-      "comparationId" : "7d407c89-2290-4e44-8c02-e20a6a413f4a",
-      "creationTime" : "08-04-2025 14:02:38",
-      "updateTime" : "08-04-2025 14:03:49",
+      "comparationId" : "6e838f82-a73c-4ce7-80ad-1505a09b054e",
+      "creationTime" : "23-04-2025 11:03:11",
+      "updateTime" : "23-04-2025 11:04:11",
       "createdBy" : 10436,
       "updatedBy" : 10436,
       "name" : "group",
@@ -44,9 +44,9 @@
       "hidden" : false,
       "children" : [ {
         "class" : "com.biit.webforms.persistence.entity.Question",
-        "comparationId" : "e1161e1c-89bf-46bc-9f79-1cc746375d6d",
-        "creationTime" : "08-04-2025 14:02:55",
-        "updateTime" : "08-04-2025 14:03:49",
+        "comparationId" : "21d454bf-afed-4a25-89f1-166fc163ef8a",
+        "creationTime" : "23-04-2025 11:03:11",
+        "updateTime" : "23-04-2025 11:03:26",
         "createdBy" : 10436,
         "updatedBy" : 10436,
         "name" : "question",
@@ -59,13 +59,13 @@
         "hidden" : false,
         "children" : [ {
           "class" : "com.biit.webforms.persistence.entity.Answer",
-          "comparationId" : "04dad553-a754-4000-85c2-157731ac78b4",
-          "creationTime" : "08-04-2025 14:03:30",
-          "updateTime" : "08-04-2025 14:03:49",
+          "comparationId" : "72bf1368-b207-43c1-b127-f3ed6f60d0d4",
+          "creationTime" : "23-04-2025 11:03:11",
+          "updateTime" : "23-04-2025 11:03:11",
           "createdBy" : 10436,
           "updatedBy" : 10436,
-          "name" : "answer",
-          "label" : "answer",
+          "name" : "answer1",
+          "label" : "Answer",
           "labelTranslations" : {
             "NL" : "Answerchung",
             "ES" : "Respuesta"
@@ -95,6 +95,59 @@
           "ES" : "Descripción de pregunta"
         },
         "defaultValueString" : null
+      }, {
+        "class" : "com.biit.webforms.persistence.entity.Question",
+        "comparationId" : "bf152617-d734-4d88-9c99-5c152ddb5eea",
+        "creationTime" : "23-04-2025 11:03:28",
+        "updateTime" : "23-04-2025 11:04:11",
+        "createdBy" : 10436,
+        "updatedBy" : 10436,
+        "name" : "question2",
+        "label" : "question2",
+        "labelTranslations" : {
+          "NL" : "Sliderchung",
+          "ES" : "Deslizador"
+        },
+        "originalReference" : "bf152617-d734-4d88-9c99-5c152ddb5eea",
+        "hidden" : false,
+        "children" : [ {
+          "class" : "com.biit.webforms.persistence.entity.Answer",
+          "comparationId" : "1bbd2d2b-b3d1-4b65-8a87-f19eb34bbad8",
+          "creationTime" : "23-04-2025 11:03:53",
+          "updateTime" : "23-04-2025 11:04:11",
+          "createdBy" : 10436,
+          "updatedBy" : 10436,
+          "name" : "answer",
+          "label" : "answer",
+          "labelTranslations" : {
+            "NL" : "Answerchung",
+            "ES" : "Respuesta"
+          },
+          "originalReference" : "1bbd2d2b-b3d1-4b65-8a87-f19eb34bbad8",
+          "hidden" : false,
+          "children" : [ ],
+          "description" : "",
+          "descriptionTranslations" : {
+            "NL" : "Answerchung",
+            "ES" : "Respuestita"
+          }
+        } ],
+        "abbreviation" : "",
+        "alias" : "",
+        "answerType" : "SINGLE_SELECTION_SLIDER",
+        "mandatory" : true,
+        "consecutiveAnswers" : false,
+        "horizontal" : false,
+        "inverseAnswerOrder" : false,
+        "descriptionAlwaysVisible" : false,
+        "answerDescriptionAlwaysVisible" : false,
+        "answersValuesOnTooltip" : false,
+        "description" : "",
+        "descriptionTranslations" : {
+          "NL" : "Sliderchung",
+          "ES" : "Deslizador"
+        },
+        "defaultValueString" : null
       } ],
       "repeatable" : false,
       "isTable" : false,
@@ -106,7 +159,7 @@
     }
   } ],
   "version" : 1,
-  "organizationId" : 18903,
+  "organizationId" : 249601,
   "description" : "",
   "flows" : [ ],
   "webserviceCalls" : [ ],
