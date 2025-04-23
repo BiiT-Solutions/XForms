@@ -2,5 +2,11 @@
   "form-saved": "Ya has realizado este formulario antes, pero hubo un problema al enviarlo.",
   "form-saved-confirmation":"¿Deseas cargar el formulario guardado o empezar de nuevo?",
   "load": "Cargar",
-  "start-over": "Empezar de nuevo"
+  "start-over": "Empezar de nuevo",
+  "please-wait": "Por favor espera",
+  "fetching-data": "Estamos obteniendo tus datos y esto puede tardar unos segundos",
+  "error-retrieving-data": "Error al recuperar datos",
+  "cannot-display-content": "Desafortunadamente, no podemos mostrar el contenido de tu solicitud en este momento",
+  "if-error-persist-contact-support": "Si el problema persiste, comunícate con soporte para resolverlo",
+  "we-are-submitting": "Estamos enviando tus datos y esto puede tardar unos segundos"
 }
