@@ -12,15 +12,15 @@ import {registerLocaleData} from "@angular/common";
 
 import localeEn from '@angular/common/locales/en';
 import localeEs from '@angular/common/locales/es';
-import localeNL from '@angular/common/locales/nl';
-import localeFR from '@angular/common/locales/fr';
-import localeDE from '@angular/common/locales/de';
+import localeNl from '@angular/common/locales/nl';
+import localeFr from '@angular/common/locales/fr';
+import localeDe from '@angular/common/locales/de';
 
 registerLocaleData(localeEn, 'en')
 registerLocaleData(localeEs, 'es');
-registerLocaleData(localeNL, 'nl');
-registerLocaleData(localeFR, 'fr');
-registerLocaleData(localeDE, 'de');
+registerLocaleData(localeNl, 'nl');
+registerLocaleData(localeFr, 'fr');
+registerLocaleData(localeDe, 'de');
 
 @NgModule({
   declarations: [
