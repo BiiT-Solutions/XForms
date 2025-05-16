@@ -13,10 +13,14 @@ import {registerLocaleData} from "@angular/common";
 import localeEn from '@angular/common/locales/en';
 import localeEs from '@angular/common/locales/es';
 import localeNL from '@angular/common/locales/nl';
+import localeFR from '@angular/common/locales/fr';
+import localeDE from '@angular/common/locales/de';
 
 registerLocaleData(localeEn, 'en')
 registerLocaleData(localeEs, 'es');
 registerLocaleData(localeNL, 'nl');
+registerLocaleData(localeFR, 'fr');
+registerLocaleData(localeDE, 'de');
 
 @NgModule({
   declarations: [
@@ -34,7 +38,7 @@ registerLocaleData(localeNL, 'nl');
     {
       provide: TRANSLOCO_CONFIG,
       useValue: translocoConfig({
-        availableLangs: ['en', 'es', 'nl'],
+        availableLangs: ['en', 'es', 'nl', 'fr', 'de'],
         defaultLang: 'en',
         fallbackLang: 'en',
         reRenderOnLangChange: true,
