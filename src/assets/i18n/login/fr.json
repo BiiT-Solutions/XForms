@@ -1,0 +1,11 @@
+{
+  "400": "Oups ! Il semble que cette application et notre serveur ne soient pas synchronisés. Veuillez essayer d'actualiser la page et de vider le cache.",
+  "401": "Oups ! Il semble que votre nom d'utilisateur ou votre mot de passe soit incorrect. Veuillez réessayer.",
+  "403": "Hé ! Vous n'avez pas la permission d'accéder à cette page. Veuillez contacter votre administrateur si vous pensez qu'il s'agit d'une erreur.",
+  "404": "Nous sommes désolés, mais il semble que nos services ne soient pas en ligne actuellement. Veuillez réessayer plus tard.",
+  "423": "Vous avez atteint le nombre maximal de tentatives de connexion. Veuillez réessayer plus tard.",
+  "500": "Nous nous excusons, mais il semble qu'il y ait un problème avec nos services. Veuillez réessayer plus tard.",
+  "expired": "Votre session a expiré.",
+  "logout": "Votre compte a été déconnecté avec succès.",
+  "token-not-valid": "Le jeton n'est pas valide."
+}

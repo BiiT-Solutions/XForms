@@ -1,0 +1,12 @@
+{
+  "form-saved": "Vous avez déjà rempli ce formulaire, mais il y a eu un problème lors de l'envoi.",
+  "form-saved-confirmation": "Voulez-vous charger le formulaire sauvegardé ou recommencer ?",
+  "load": "Charger",
+  "start-over": "Recommencer",
+  "please-wait": "Veuillez patienter",
+  "fetching-data": "Nous récupérons vos données, cela peut prendre quelques secondes",
+  "error-retrieving-data": "Erreur lors de la récupération des données",
+  "cannot-display-content": "Malheureusement, nous ne pouvons pas afficher le contenu de votre demande pour le moment",
+  "if-error-persist-contact-support": "Si le problème persiste, veuillez contacter le support pour le résoudre",
+  "we-are-submitting": "Nous envoyons vos données, cela peut prendre quelques secondes"
+}
