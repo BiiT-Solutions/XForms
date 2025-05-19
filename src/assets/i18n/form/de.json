@@ -1,0 +1,12 @@
+{
+  "form-saved": "Sie haben dieses Formular bereits ausgefüllt, aber beim Absenden ist ein Problem aufgetreten.",
+  "form-saved-confirmation": "Möchten Sie das gespeicherte Formular laden oder neu beginnen?",
+  "load": "Laden",
+  "start-over": "Neu beginnen",
+  "please-wait": "Bitte warten",
+  "fetching-data": "Wir holen Ihre Daten, das kann einige Sekunden dauern",
+  "error-retrieving-data": "Fehler beim Abrufen der Daten",
+  "cannot-display-content": "Leider können wir den Inhalt Ihrer Anfrage derzeit nicht anzeigen",
+  "if-error-persist-contact-support": "Wenn das Problem weiterhin besteht, wenden Sie sich bitte an den Support, um es zu lösen",
+  "we-are-submitting": "Wir übermitteln Ihre Daten, das kann einige Sekunden dauern"
+}

@@ -1,0 +1,11 @@
+{
+  "400": "Ups! Es scheint, dass diese Anwendung und unser Server nicht synchronisiert sind. Bitte versuchen Sie, die Seite zu aktualisieren und den Cache zu leeren.",
+  "401": "Ups! Ihr Benutzername oder Passwort scheint falsch zu sein. Bitte versuchen Sie es erneut.",
+  "403": "Hey! Sie haben keine Berechtigung, auf diese Seite zuzugreifen. Bitte wenden Sie sich an Ihren Administrator, wenn Sie glauben, dass dies ein Fehler ist.",
+  "404": "Es tut uns leid, aber unsere Dienste scheinen derzeit nicht online zu sein. Bitte versuchen Sie es später erneut.",
+  "423": "Sie haben die maximale Anzahl an Anmeldeversuchen erreicht. Bitte versuchen Sie es später erneut.",
+  "500": "Entschuldigung, aber es scheint ein Problem mit unseren Diensten zu geben. Bitte versuchen Sie es später erneut.",
+  "expired": "Ihre Sitzung ist abgelaufen.",
+  "logout": "Ihr Konto wurde erfolgreich abgemeldet.",
+  "token-not-valid": "Das Token ist ungültig."
+}
