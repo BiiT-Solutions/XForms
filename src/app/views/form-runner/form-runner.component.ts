@@ -8,7 +8,7 @@ import {EventService} from "../../services/events/event-service";
 import {Subject} from "../../services/events/subject";
 import {Constants} from "../../shared/constants";
 import {SessionService} from "kafka-event-structure-lib";
-import {OrganizationService} from "user-manager-structure-lib";
+import {TeamService} from "user-manager-structure-lib";
 import {ErrorHandler} from "biit-ui/utils";
 import {TranslocoService, TRANSLOCO_SCOPE} from "@ngneat/transloco";
 
@@ -31,7 +31,7 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
               private eventService: EventService,
               private webFormsService: WebFormsService,
               private sessionService: SessionService,
-              private organizationService: OrganizationService,
+              private teamService: TeamService,
               private snackbarService: BiitSnackbarService,
               private transloco: TranslocoService,
               private route: ActivatedRoute) {
@@ -54,11 +54,12 @@ export class FormRunnerComponent implements OnInit, AfterViewInit {
         this.preview = true;
       }
     });
-    this.organizationService.getAllByLoggedUser().subscribe(organizations => {
-      if (organizations && organizations.length) {
-        this.eventService.organization = organizations[0].id;
+    this.teamService.getAllTeamsForAUser(this.sessionService.getUser().uuid).subscribe(teams => {
+      if (teams && teams.length) {
+        this.eventService.unit = teams[0].uniqueName;
+        this.eventService.organization = teams[0].organization.id;
       }
-    });
+    })
   }
 
   getMapFromParams(params: Params): Map<string, any> {

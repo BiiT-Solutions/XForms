@@ -9,6 +9,7 @@ export class EventService {
   static readonly REPLY_TO: string = "XFORMS";
   static readonly TAG: string = "XFORMS";
   public organization: string = null;
+  public unit: string = null;
 
   constructor(private eventService: KafkaEventService) {
   }
@@ -23,6 +24,9 @@ export class EventService {
     event.customPropertiesMap = new Map<string, string>([['context', JSON.stringify(context)]]);
     if (this.organization) {
       event.organization = this.organization;
+    }
+    if (this.unit) {
+      event.unit = this.unit;
     }
     event.replyTo = replyTo;
     event.tag = tag;
