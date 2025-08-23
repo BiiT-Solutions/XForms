@@ -1,4 +1,4 @@
-import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from "@angular/common/http";
+import {HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Constants} from "../shared/constants";
 import {Injectable} from "@angular/core";
@@ -13,13 +13,18 @@ export class HeaderInterceptor implements HttpInterceptor {
 
   }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    const reqHeaders: HttpHeaders = req.headers
+      .append(Constants.HEADERS.CACHE_CONTROL, 'no-cache')
+      .append(Constants.HEADERS.PRAGMA, 'no-cache');
     if (this.getAuthorizationHeader(req.url)) {
       const request: HttpRequest<any> = req.clone({
-        headers: req.headers.append(Constants.HEADERS.AUTHORIZATION, this.getAuthorizationHeader(req.url) ),
+        headers: reqHeaders.append(Constants.HEADERS.AUTHORIZATION, this.getAuthorizationHeader(req.url) ),
       });
       return next.handle(request);
     } else {
-      return next.handle(req);
+      return next.handle(req.clone({
+        headers: reqHeaders
+      }));
     }
   }
   getAuthorizationHeader(url: string): string {
