@@ -1,6 +1,6 @@
 {
   "name": "xforms",
-  "version": "1.0.281",
+  "version": "1.0.282",
   "scripts": {
     "ng": "ng",
     "start": "npm run prepare:translations && ng serve",
