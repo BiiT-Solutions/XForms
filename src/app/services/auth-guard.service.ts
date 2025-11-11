@@ -1,13 +1,13 @@
 import {inject, Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivateFn, Router, RouterStateSnapshot} from "@angular/router";
 import {Constants} from "../shared/constants";
-import {AuthService, SessionService} from "kafka-event-structure-lib";
+import {AuthService, SessionService} from "@biit-solutions/kafka-event-structure";
 import copy from "fast-copy";
-import {BiitSnackbarService, NotificationType} from "biit-ui/info";
+import {BiitSnackbarService, NotificationType} from "@biit-solutions/wizardry-theme/info";
 import {TranslocoService} from "@ngneat/transloco";
-import {AuthService as UserManagerAuthService} from "user-manager-structure-lib";
-import {SessionService as UserManagerSessionService} from "user-manager-structure-lib";
-import {User} from "authorization-services-lib";
+import {AuthService as UserManagerAuthService} from "@biit-solutions/user-manager-structure";
+import {SessionService as UserManagerSessionService} from "@biit-solutions/user-manager-structure";
+import {User} from "@biit-solutions/authorization-services";
 import {firstValueFrom, forkJoin, Observable} from "rxjs";
 import {HttpResponse} from "@angular/common/http";
 

@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-import {BiitIconService} from "biit-ui/icon";
-import {completeIconSet} from "biit-icons-collection";
-import {KafkaEventStructureRootService} from "kafka-event-structure-lib";
-import {UserManagerRootService} from "user-manager-structure-lib";
-import {BiitSnackbarHorizontalPosition, BiitSnackbarService, BiitSnackbarVerticalPosition} from "biit-ui/info";
+import {BiitIconService} from "@biit-solutions/wizardry-theme/icon";
+import {completeIconSet} from "@biit-solutions/biit-icons-collection";
+import {KafkaEventStructureRootService} from "@biit-solutions/kafka-event-structure";
+import {UserManagerRootService} from "@biit-solutions/user-manager-structure";
+import {BiitSnackbarHorizontalPosition, BiitSnackbarService, BiitSnackbarVerticalPosition} from "@biit-solutions/wizardry-theme/info";
 import {Environment} from "../environments/environment";
 import {TranslocoService} from "@ngneat/transloco";
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Form} from "x-forms-lib";
+import {Form} from "@biit-solutions/x-forms-lib";
 import {Environment} from "../../environments/environment";
 
 @Injectable({

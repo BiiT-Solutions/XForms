@@ -1,15 +1,15 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute, Params} from "@angular/router";
-import {Form, FormResult} from "x-forms-lib";
-import {BiitProgressBarType, BiitSnackbarService} from "biit-ui/info";
+import {Form, FormResult} from "@biit-solutions/x-forms-lib";
+import {BiitProgressBarType, BiitSnackbarService} from "@biit-solutions/wizardry-theme/info";
 import {WebFormsService} from "../../services/web-forms.service";
 import {EventService} from "../../services/events/event-service";
 import {Subject} from "../../services/events/subject";
 import {Constants} from "../../shared/constants";
-import {SessionService} from "kafka-event-structure-lib";
-import {TeamService} from "user-manager-structure-lib";
-import {ErrorHandler} from "biit-ui/utils";
+import {SessionService} from "@biit-solutions/kafka-event-structure";
+import {TeamService} from "@biit-solutions/user-manager-structure";
+import {ErrorHandler} from "@biit-solutions/wizardry-theme/utils";
 import {TranslocoService, TRANSLOCO_SCOPE} from "@ngneat/transloco";
 
 @Component({

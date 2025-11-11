@@ -1,6 +1,9 @@
 {
-  "name": "xforms",
-  "version": "1.0.301",
+  "name": "@biit-solutions/xforms-runner",
+  "version": "1.1.0",
+  "license": "AGPLv3",
+  "author": "BiiT Sourcing Solutions",
+  "private": false,
   "scripts": {
     "ng": "ng",
     "start": "npm run prepare:translations && ng serve",
@@ -11,9 +14,8 @@
     "prepare:publication": "npm run prepare:translations && npm run build && npm run prepare:docs",
     "clean:translations": "del-cli --force ./src/assets/i18n/biit-ui/ && del-cli --force ./src/assets/i18n/xforms/",
     "prepare:translations": "npm run clean:translations && cpx \"./node_modules/biit-ui/assets/i18n/**/*.json\" \"./src/assets/i18n/biit-ui/\" && cpx \"./node_modules/x-forms-lib/assets/i18n/**/*.json\" \"./src/assets/i18n/xforms/\"",
-    "publish": "npm run prepare:publication && npm publish ./dist/xforms"
+    "publish": "npm run prepare:publication && npm publish --access=public ./dist/xforms"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "v15-lts",
     "@angular/common": "v15-lts",
@@ -26,10 +28,10 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0",
-    "biit-ui": "latest",
-    "x-forms-lib": "latest",
-    "kafka-event-structure-lib": "latest",
-    "user-manager-structure-lib": "latest",
+    "@biit-solutions/wizardry-theme": "latest",
+    "@biit-solutions/x-forms-lib": "latest",
+    "@biit-solutions/kafka-event-structure": "latest",
+    "@biit-solutions/user-manager-structure": "latest",
     "fast-copy": "3.0.2"
   },
   "devDependencies": {
@@ -47,5 +49,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BiiT-Solutions/XForms.git"
   }
 }

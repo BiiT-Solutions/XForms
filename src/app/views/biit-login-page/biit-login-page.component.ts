@@ -1,27 +1,27 @@
 import {Component, OnInit} from '@angular/core';
-import {BiitLogin} from "biit-ui/models";
+import {BiitLogin} from "@biit-solutions/wizardry-theme/models";
 import {Constants} from "../../shared/constants";
 import {HttpResponse} from "@angular/common/http";
-import {BiitProgressBarType, BiitSnackbarService, NotificationType} from "biit-ui/info";
+import {BiitProgressBarType, BiitSnackbarService, NotificationType} from "@biit-solutions/wizardry-theme/info";
 import {TRANSLOCO_SCOPE, TranslocoService} from "@ngneat/transloco";
-import {BiitIconService} from "biit-ui/icon";
-import {completeIconSet} from "biit-icons-collection";
+import {BiitIconService} from "@biit-solutions/wizardry-theme/icon";
+import {completeIconSet} from "@biit-solutions/biit-icons-collection";
 import {ActivatedRoute, Params, Router} from "@angular/router";
-import {LoginRequest, User} from "authorization-services-lib";
-import {AuthService, SessionService} from "kafka-event-structure-lib";
-import {BiitLoginServiceSupport} from "biit-ui/login/biit-login/models/biit-login-service-support";
+import {LoginRequest, User} from "@biit-solutions/authorization-services";
+import {AuthService, SessionService} from "@biit-solutions/kafka-event-structure";
+import {BiitLoginServiceSupport} from "@biit-solutions/wizardry-theme/login/biit-login/models/biit-login-service-support";
 import {
   AuthService as UserManagerAuthService,
   SessionService as UserManagerSessionService,
   SignupRequestConverter,
   TeamService,
   UserService
-} from "user-manager-structure-lib";
-import {ErrorHandler} from 'biit-ui/utils';
+} from "@biit-solutions/user-manager-structure";
+import {ErrorHandler} from '@biit-solutions/wizardry-theme/utils';
 import {Environment} from "../../../environments/environment";
 import {combineLatest, firstValueFrom} from "rxjs";
 import {ItemMap} from "../../model/item-map";
-import {SignUpRequest} from "biit-ui/login/biit-login/models/sign-up-request";
+import {SignUpRequest} from "@biit-solutions/wizardry-theme/login/biit-login/models/sign-up-request";
 
 @Component({
   selector: 'biit-login-page',

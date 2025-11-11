@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {Subject} from "./subject";
 import {Constants} from "../../shared/constants";
-import {Event, EventService as KafkaEventService} from "kafka-event-structure-lib";
+import {Event, EventService as KafkaEventService} from "@biit-solutions/kafka-event-structure";
 import {Observable} from "rxjs";
 
 @Injectable({providedIn: 'root'})

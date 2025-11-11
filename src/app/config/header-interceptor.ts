@@ -2,8 +2,8 @@ import {HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest} from 
 import {Observable} from "rxjs";
 import {Constants} from "../shared/constants";
 import {Injectable} from "@angular/core";
-import {SessionService} from "kafka-event-structure-lib";
-import {SessionService as UserManagerSessionService} from "user-manager-structure-lib";
+import {SessionService} from "@biit-solutions/kafka-event-structure";
+import {SessionService as UserManagerSessionService} from "@biit-solutions/user-manager-structure";
 
 @Injectable()
 export class HeaderInterceptor implements HttpInterceptor {
