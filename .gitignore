@@ -42,3 +42,4 @@ testem.log
 Thumbs.db
 /src/assets/i18n/biit-ui/
 /src/assets/i18n/xforms/
+package-lock.json
